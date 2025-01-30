@@ -1,0 +1,15 @@
+.card_home_clients_card_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 72px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+@media(max-width: 1200px) {
+    .card_home_clients_card_container img {
+        width: fit-content;
+        height: 100px;
+    }
+}

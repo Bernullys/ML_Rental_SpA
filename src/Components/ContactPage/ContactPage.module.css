@@ -1,0 +1,141 @@
+.contact_main_section_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:fit-content;
+    flex-shrink: 0;
+    margin-top: 0.5px;
+    background: linear-gradient(180deg, var(--color5) 0%, rgba(158, 233, 255, 0.10) 30.98%, rgba(45, 187, 229, 0.00) 68.36%);
+    margin-top: 100px;
+}
+
+.contact_title {
+    margin: 110px 0 50px 0;
+    color: #3D3D3D;
+    font-family: "futuraLtBt";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -2.32px;
+    text-align: center;
+}
+
+.contact_paragraph {
+    margin: 0px 0px 30px 0px;
+    width: 50%;
+    text-align: center;
+    color: #3D3D3D;
+    font-family: "futuraLtBt";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact_form {
+    width: 60%;
+}
+
+.contact_form_sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label {
+    color: #3D3D3D;
+    font-family: "futuraLtBt";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 16px 0px 5px 0px;
+}
+
+input,
+select {
+    width: 100%;
+    height: 40px;
+    border-radius: 16px;
+    border: 1px solid  var(--color4);
+    font-family: "futuraLtBt";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    padding-left: 12px;
+}
+
+input::after {
+    border-color:  var(--color4);
+}
+
+#message {
+    height: 20%;
+}
+
+.button_contact {
+    display: flex;
+    width: 189px;
+    height: 55px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 88px;
+    background:  var(--color4);
+    color: #FFF;
+    text-align: center;
+    font-family: "futuraLtBt";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 110px;
+    margin-top: 30px;
+}
+
+.button_contact:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color:  var(--color4);
+    font-weight: 500;
+    border:  var(--color4) solid 1px;
+}
+
+textarea {
+    width: 100%;
+    height: 160px;
+    border-radius: 16px;
+    border: 1px solid  var(--color4);
+    font-family: "futuraLtBt";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+}
+
+@media (max-width: 450px) {
+    .contact_title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 300px) {
+    .contact_title {
+        font-size: 32px;
+    }
+    .button_contact {
+        width: 130px;
+        height: 45px;
+        padding: 5px;
+        border-radius: 89px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact_form {
+        width: 80%;
+    }
+}

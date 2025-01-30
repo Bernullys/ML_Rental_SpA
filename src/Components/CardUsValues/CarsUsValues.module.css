@@ -1,0 +1,59 @@
+.card_us_values_main_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_us_values_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.card_us_value {
+    margin: 0;
+    color: #3D3D3D;
+    text-align: center;
+    font-family: "futuraLtBt";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card_us_vaulue_description {
+    margin: 20px 0 0 0;
+    text-align: center;
+    color: #3D3D3D;
+    text-align: center;
+    font-family: "futuraLtBt";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (max-width: 750px) {
+    .card_us_vaulue_description {
+        display: none;
+    }
+    .card_us_value {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card_us_value {
+        display: none;
+    }
+}
+
+@media (max-width: 380px) {
+    .card_us_values_container {
+        display: none;
+    }
+}

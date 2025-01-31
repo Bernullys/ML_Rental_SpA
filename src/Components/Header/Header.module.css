@@ -14,7 +14,8 @@ header {
     justify-content: center;
     font-size: var(--sm);
     font-weight: bold;
-    background: #FFF;
+    color: var(--color11);
+    background: var(--color55);
 }
 
 .a_logo {
@@ -49,12 +50,13 @@ header {
     font-family: "futuraLtBt";
     font-size: 20px;
     font-style: normal;
+    color: var(--color00);
     font-weight: 400;
     line-height: normal;
 }
 
 .header_nav_ul li a:hover {
-    color:  var(--color4);
+    color:  var(--color22);
 }
 
 .active_page {
@@ -63,7 +65,8 @@ header {
 }
 
 .active_page:visited {
-    color:  var(--color4);  
+    color:  var(--color66);
+    font-weight: bolder;  
 }
 
 .active_page::after {
@@ -110,9 +113,6 @@ header {
 
 /* This is for the menu when width < 960px */
 
-.responsive_menu_container {
-
-}
 
 .responsive_menu_list {
     width: 100%;

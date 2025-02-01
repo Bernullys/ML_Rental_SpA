@@ -8,7 +8,7 @@ header {
 
 .header_nav_container {
     width: auto;
-    height: 100px;
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +16,7 @@ header {
     font-weight: bold;
     color: var(--color11);
     background: var(--color55);
+    opacity: 0.9;
 }
 
 .a_logo {
@@ -23,9 +24,9 @@ header {
 }
 
 .header_logo_container {
-    height: 125px;
-    width: 125px;
-    background: url("../../../public/assets/headerlogo.png");
+    height: 150px;
+    width: 400px;
+    background: url("../../../public/assets/logo-mlrental-removebg.png");
     background-size: cover;
 }
 
@@ -34,82 +35,46 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     list-style: none;
-    margin: 0px 0px 0px 246px;
+    margin: 0px 0px 0px 64px;
     padding: 0;
+}
+
+
+.header_nav_ul li {
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    width: 160px;
+    height: 116px;
+    padding-top: 44px;
+}
+
+.header_nav_ul li:hover {
+    background-color: var(--color44);
 }
 
 .header_nav_ul li a {
     text-decoration: none;
     padding: 24px 0 24px;
-    margin-right: 40px;
-    padding-top: 38px;
-    padding-bottom: 38px;
-    color: #000;
     font-family: "futuraLtBt";
     font-size: 20px;
     font-style: normal;
     color: var(--color00);
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
+    text-align: center;
 }
 
 .header_nav_ul li a:hover {
-    color:  var(--color22);
+    color: var(--color77);
 }
 
-.active_page {
-    position: relative;
-    display: inline-block;    
+.header_nav_ul li .active_page {
+    font-weight: 700;
+    color: var(--color77);
 }
-
-.active_page:visited {
-    color:  var(--color66);
-    font-weight: bolder;  
-}
-
-.active_page::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -0.5px;
-    width: 100%;
-    height: 10px;
-    background-color:  var(--color4);
-    border-radius: 8px;
-}
-
-.contact_header_button_container {
-    list-style: none;
-    padding: 0;
-}
-
-#cotiza_header_button {
-    text-decoration: none;
-    display: flex;
-    width: 221px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-    background:  var(--color4);
-    color: #FFF;
-    font-family: "futuraLtBt";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-#cotiza_header_button:hover {
-    background-color: rgba(0, 0, 0, 0);
-    color:  var(--color4);
-    font-weight: 500;
-    border:  var(--color4) solid 1px;
-}
-
 
 /* This is for the menu when width < 960px */
 
@@ -149,51 +114,6 @@ header {
 }
 
 .menu_hided {
-    display: none;
-}
-
-/* This is for show services */
-
-.show_services {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    padding: 0px;
-    margin: 2px 0 0 0; 
-    position: fixed;
-    top: 100px;
-    right: 20%;
-
-}
-
-.show_services li {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    background-color: #FFF;
-    width: 100%;
-    padding: 8px 0 8px 8px;
-    border: solid 1px #FFF;
-}
-
-.show_services li:hover {
-    background-color: var(--color4);
-}
-
-.show_services li a {
-    text-decoration: none;
-    color: #000;
-    font-family: "futuraLtBt";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.show_services_hided {
     display: none;
 }
 

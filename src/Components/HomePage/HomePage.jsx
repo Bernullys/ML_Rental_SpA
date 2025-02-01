@@ -23,7 +23,6 @@ import imageClientLogo1 from "../../../public/assets/logo-enel-green-power.jpg"
 import imageClientLogo2 from "../../../public/assets/logo-fluxsolar.png"
 import imageClientLogo3 from "../../../public/assets/logo-ingeprover.jpeg"
 import imageClientLogo4 from "../../../public/assets/logo-ionit.jpeg"
-import imageClientLogo5 from "../../../public/assets/logo-mlrental.jpeg"
 
 
 
@@ -106,10 +105,6 @@ function HomePage () {
         {
             id: 12,
             backgroundImage: imageClientLogo4
-        },
-        {
-            id: 13,
-            backgroundImage: imageClientLogo5
         }
     ]
 

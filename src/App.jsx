@@ -27,7 +27,7 @@ const ScrollToTop = () => {
 const AppRoutes = () => {
   let routes = useRoutes ([
     { path: '/', element: <HomePage /> },
-    { path: '/nosotros', element: <UsPage /> },
+    { path: '/empresa', element: <UsPage /> },
     { path: '/contacto', element: <ContactPage /> },
     { path: '/servicios', element: <ServicesPage /> },
     { path: '/servicios/pruebas', element: <ServiceFirstPage /> },

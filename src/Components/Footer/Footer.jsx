@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 import SocialLogos from "../SocialLogos/SocialLogos"
 import styles from "./Footer.module.css"
 
-import footerLogoImage from "../../../public/assets/logo-footer.png"
+import footerLogoImage from "../../../public/assets/logo-mlrental-footer.png"
 
 function Footer () {
     return (
@@ -16,12 +16,23 @@ function Footer () {
                 <section className={styles.footer_central_container}>
                     <SocialLogos />
                     <ul>
-                        <h3>Email</h3>
-                        <li>l.nunez@hvtest.cl</li>
+                        <h3>Contáctenos</h3>
+                        <li>l.nunez@mlrental.cl</li>
+                        <li>(+56) 973452744</li>
+                        <li>Exequiel Fernandez N°2302, Macul, Región Metrololitana.</li>
                     </ul>
                     <ul>
-                        <h3>Teléfono</h3>
-                        <li>(+56) 973452744</li>
+                        <h3>ML Rental</h3>
+                        <li>Inicio</li>
+                        <li>Empresa</li>
+                        <li>Equipos en arriendo</li>
+                        <li>Contacto</li>
+                    </ul>
+                    <ul>
+                        <h3>Redes Sociales</h3>
+                        <li>Instagram</li>
+                        <li>Linkedin</li>
+                        <li>Whatsapp</li>
                     </ul>
                 </section>
             </section>

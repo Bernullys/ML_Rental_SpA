@@ -113,10 +113,28 @@ function HomePage () {
         }
     ]
 
+    const backGroungTimedImages = [imageService1, imageService2, imageService3]
+
+    const [currentBackgroundTimedImage, setCurrentBackgroundTimedImage] = useState(backGroungTimedImages[0])
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentBackgroundTimedImage((prevImage) => {
+                const currentIndex = backGroungTimedImages.indexOf(prevImage);
+                const nextIndex = (currentIndex + 1) % backGroungTimedImages.length;
+                return backGroungTimedImages[nextIndex];
+            });
+        }, 3000); // Change image every 3 seconds
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <section className={styles.home_page_main_container}>
             <section className={styles.home_top_container}>
-                <section className={styles.home_top_container}>
+                <section className={styles.home_top_container}
+                        style={{backgroundImage: `url(${currentBackgroundTimedImage})`}}
+                >
                     <section className={styles.home_sociallogos_container}>
                         <SocialLogos />
                     </section>

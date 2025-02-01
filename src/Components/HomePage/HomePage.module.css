@@ -5,10 +5,10 @@
 
 .home_top_container {
     height: 555px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, rgba(7, 33, 80, 0.1) 45.31%, rgba(255, 255, 255, 0.00) 100%), url("../../../public/assets/image_electric_towers.png");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out;
 }
 
 .home_sociallogos_container {

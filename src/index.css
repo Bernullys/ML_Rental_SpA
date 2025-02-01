@@ -1,16 +1,9 @@
 :root {
-    /*Original design*/
-    /* --corlor1: #18CAFF;
-    --color2: #2dbbe51a; */
-
     /*More like the logo color*/
     --color4: #0078A7;
     --color5: #EAFEFF;
     --color2: #18CAFF;
 
-    /*ask by client*/
-    /* --color4: #4040fb; 
-    --color5: #ECF2FF; */
 }
 
 body {

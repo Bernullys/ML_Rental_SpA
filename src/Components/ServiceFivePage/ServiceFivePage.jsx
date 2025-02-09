@@ -188,7 +188,7 @@ function ServiceFivePage () {
 
     return (
         <section className={styles.servicefive_main_container}>
-                <h1 className={styles.servicefive_title}>Arriendo de Equipos de Pruebas Eléctricas</h1>
+                <h1 className={styles.servicefive_title}>Equipos de Pruebas Eléctricas en Arriendo</h1>
             <section className={styles.servicefive_titleanddescription_container}>
                 <p className={styles.servicefive_paragraph}>
                     Nuestra empresa comprometida con la importancia de la infraestructura eléctrica ofrece una amplia gama de

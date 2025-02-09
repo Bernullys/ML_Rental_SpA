@@ -119,7 +119,7 @@ function HomePage () {
                 const nextIndex = (currentIndex + 1) % backGroungTimedImages.length;
                 return backGroungTimedImages[nextIndex];
             });
-        }, 3000); // Change image every 3 seconds
+        }, 3000); // Change image every 4 seconds
 
         return () => clearInterval(interval);
     }, []);
@@ -130,79 +130,58 @@ function HomePage () {
                 <section className={styles.home_top_container}
                         style={{backgroundImage: `url(${currentBackgroundTimedImage})`}}
                 >
-                    <section className={styles.home_sociallogos_container}>
-                        <SocialLogos />
-                    </section>
                     <section className={styles.home_title_container}>
-                        <h1 className={styles.home_title}>Servicios Eléctricos <b className={styles.title_stylist_words}>de Alto Estándar</b> <br></br>para la Industria</h1>
-                        <section className={styles.home_buttons_title_container}>
-                            <NavLink to="/contacto">
-                                <button className={styles.blue_button}>Contáctanos</button>
-                            </NavLink>
-                            <NavLink to="/proyectos">
-                                <button className={styles.transparent_button}>Ver Proyectos</button>
-                            </NavLink>
-                        </section>
+                        <h1 className={styles.home_title}>¿ Necesitas arrendar equipos de pruebas eléctricas ?</h1>
+                        <p className={styles.home_middle_paragraph}>Nuestra empresa cuenta con las mejores marcas internacionales en instrumentos para
+                        la ejecución efectiva y segura de las pruebas eléctricas en terreno, atendiendo efectivamente las necesidades de todos nuestros
+                        clientes.</p>
+                        <NavLink to="/equipos-en-arriendo">
+                            <button className={styles.white_button}>Ver Equipos</button>
+                        </NavLink>
                     </section>
                 </section>
                 <section className={styles.home_middle_container}>
-                    <h2 className={styles.home_middle_title}>Bienvenidos a Hv Test</h2>
-                    <p className={styles.home_middle_paragraph}>Somos una empresa de servicios eléctricos conformada por profesionales en el área de ingeniería, especialistas en baja, media y alta tensión, 
-                        orientados a satisfacer las necesidades y exigencias de nuestros clientes, de acuerdo a las normas y estándares actuales que rigen al sistema 
-                        eléctrico nacional e internacional.</p>
-                    <NavLink to="/nosotros">
-                        <button className={styles.white_button}>Saber más</button>
-                    </NavLink>
+                    <h2 className={styles.home_middle_title}>NO PAGUES DÍAS EXTRA EN TUS ARRIENDOS</h2>
+                    <p className={styles.home_middle_paragraph}>Con nosotros puedes entregar los instrumentos los días Sábado Y Domingo.</p>
+                    <h3 className={styles.home_middle_title}>¿ Cómo arrendar nuestros equipos de pruebas eléctricas ?</h3>
+                    <section className={styles.howtorent_container}>
+                        <article className={styles.howtorent_step}>
+                            <h4 className={styles.howtorent_step_title}>Titulo paso 1</h4>
+                            <p className={styles.howtorent_paragraph}>Con nosotros puedes entregar los instrumentos los días Sábado Y Domingo.</p>
+                        </article>
+                        <article className={styles.howtorent_step}>
+                            <h4 className={styles.howtorent_step_title}>Titulo paso 2</h4>
+                            <p className={styles.howtorent_paragraph}>Con nosotros puedes entregar los instrumentos los días Sábado Y Domingo.</p>
+                        </article>
+                        <article className={styles.howtorent_step}>
+                            <h4 className={styles.howtorent_step_title}>Titulo paso 3</h4>
+                            <p className={styles.howtorent_paragraph}>Con nosotros puedes entregar los instrumentos los días Sábado Y Domingo.</p>
+                        </article>
+                        <article className={styles.howtorent_step}>
+                            <h4 className={styles.howtorent_step_title}>Titulo paso 4</h4>
+                            <p className={styles.howtorent_paragraph}>Con nosotros puedes entregar los instrumentos los días Sábado Y Domingo.</p>
+                        </article>
+                        <article className={styles.howtorent_step}>
+                            <h4 className={styles.howtorent_step_title}>Titulo paso 5</h4>
+                            <p className={styles.howtorent_paragraph}>Con nosotros puedes entregar los instrumentos los días Sábado Y Domingo.</p>
+                        </article>
+                    </section>
                 </section>
-                <section className={styles.home_services_container}>
-                    <h2 className={styles.home_services_title}>Nuestros Servicios</h2>
+                {/* <section className={styles.home_services_container}>
+                    <h2 className={styles.home_services_title}>Nuestros Equipos</h2>
                     <section className={styles.home_services_arrows_cards_container}>
                         <section className={styles.home_services_cards_container}>
 
                             {
-                                cardHomeServicesProps.map(card => (
-                                    <CardHomeSercives
-                                    key={card.id}
-                                    serviceFirstLine={card.serviceFirstLine}
-                                    serviceSecondLine={card.serviceSecondLine}
-                                    serviceThirdLine={card.serviceThirdLine}
-                                    backgroundImage={card.backgroundImage}
-                                    goTo={card.goTo}
-                                    />
-                                ))
+                                <CardHomeSercives/>
                             }
 
 
                         </section>
                     </section>
-                </section>
+                </section> */}
 
-                <section>
-                    <h2 className={styles.home_projects_title}>Proyectos</h2>
-                    <section className={styles.home_projects_grid_container}>
-                        {
-                            cardHomeProjectsProps.map(card => (
-                                <CardHomeProjects 
-                                    key={card.id}
-                                    project={card.project}
-                                    description={card.description}
-                                    backgroundImage={card.backgroundImage}/>
-                            ))
-                        }
-                    </section>
-                </section>
-                <section>
-                    <h2 className={styles.home_clients_title}>Clientes</h2>
-                    <section className={styles.home_clients_container}>
-                        {
-                            cardHomeClientProps.map(card => (
-                                <CardHomeClients 
-                                    key={card.id}
-                                    backgroundImage={card.backgroundImage}/>
-                            ))
-                        }
-                    </section>
-                </section>
+
             </section>
 
         </section>

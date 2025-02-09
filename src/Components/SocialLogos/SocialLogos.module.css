@@ -1,11 +1,11 @@
 .logos_main_container {
     display: flex;
-    justify-content: space-around;
-    width: 144px;
-    padding: 30px 106px 0 0;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    height: 100px;
 }
 
-.insta_logo,
 .linke_logo,
 .whatsapp_logo {
     width: 24px;
@@ -14,7 +14,6 @@
     padding: 0;
 }
 
-.insta_logo:hover,
 .linke_logo:hover,
 .whatsapp_logo:hover {
     width: 24px;

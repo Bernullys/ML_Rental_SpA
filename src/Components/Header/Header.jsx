@@ -38,7 +38,7 @@ function Header () {
                     </li>
                     <li>
                         <NavLink
-                            to="/servicios"
+                            to="/equipos-en-arriendo"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}
                             >
                                 EQUIPOS EN ARRIENDO

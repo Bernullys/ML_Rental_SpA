@@ -1,28 +1,46 @@
 import { NavLink } from "react-router-dom"
 import styles from "./CardHomeServices.module.css"
 
-function CardHomeSercives ({ serviceFirstLine, serviceSecondLine, serviceThirdLine, backgroundImage, goTo, isSelected }) {
+import imageFiveService1 from "../../../public/assets/RMO200G.png"
+import imageFiveService2 from "../../../public/assets/AEMC3731.png"
+import imageFiveService3 from "../../../public/assets/IBEX2000.png"
+import imageFiveService4 from "../../../public/assets/AEMCDTR8510.png"
+import imageFiveService5 from "../../../public/assets/PUNTASVLF.png"
+import imageFiveService6 from "../../../public/assets/ALROCMF360.png"
+import imageFiveService7 from "../../../public/assets/MEGGERS1-1068.png"
+import imageFiveService8 from "../../../public/assets/AEMC6472.png"
+import imageFiveService9 from "../../../public/assets/AEMC6250.png"
 
-    const lineStyles = {
-        background: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-    }
+const slides = [
+    {
+      title: "1 Series",
+      image: imageFiveService1,
+    },
+    {
+      title: "2 Series",
+      image: imageFiveService2,
+    },
+    {
+      title: "3 Series",
+      image: imageFiveService3,
+    },
+    {
+      title: "4 Series",
+      image: imageFiveService4,
+    },
+    {
+      title: "5 Series",
+      image: imageFiveService5,
+    },
+  ];
+
+
+const CardHomeSercives = () => {
 
     return (
-        <section className={styles.card_home_service_container} style={lineStyles}>
-            <section className={styles.card_home_service_container_blind}>
-                <section className={styles.card_home_service_title_container}>
-                    <h2 className={styles.card_home_service_title}>{serviceFirstLine}</h2>
-                    <h2 className={styles.card_home_service_title}>{serviceSecondLine}</h2>
-                    <h2 className={styles.card_home_service_title}>{serviceThirdLine}</h2>
-                </section>
-                <NavLink to={goTo}>
-                    <button className={styles.white_button_sm}>Ver Servicio</button>
-                </NavLink>
-            </section>
-        </section>
-    )
-}
+    <section>
+    </section>
+  );
+};
 
 export default CardHomeSercives

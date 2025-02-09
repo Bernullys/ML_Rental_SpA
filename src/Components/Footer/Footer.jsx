@@ -1,5 +1,10 @@
 import { NavLink } from "react-router-dom"
 import SocialLogos from "../SocialLogos/SocialLogos"
+import { CiMail } from "react-icons/ci";
+import { MdOutlinePhone } from "react-icons/md";
+import { FaMapLocationDot } from "react-icons/fa6";
+
+
 import styles from "./Footer.module.css"
 
 import footerLogoImage from "../../../public/assets/logo-mlrental-footer.png"
@@ -8,33 +13,61 @@ function Footer () {
     return (
         <footer className={styles.footer_main_container}>
             <section className={styles.footer_nav_container}>
-                <section className={styles.footer_logo_container}>
-                    <NavLink to="/">
-                        <img className={styles.logo_hvt_footer} src={footerLogoImage} alt="HVTest-company-logo" />
-                    </NavLink>
-                </section>
                 <section className={styles.footer_central_container}>
-                    <SocialLogos />
-                    <ul>
-                        <h3>Contáctenos</h3>
-                        <li>l.nunez@mlrental.cl</li>
-                        <li>(+56) 973452744</li>
-                        <li>Exequiel Fernandez N°2302, Macul, Región Metrololitana.</li>
-                    </ul>
-                    <ul>
+                    <article className={styles.footer_article}>
                         <h3>ML Rental</h3>
-                        <li>Inicio</li>
-                        <li>Empresa</li>
-                        <li>Equipos en arriendo</li>
-                        <li>Contacto</li>
-                    </ul>
-                    <ul>
-                        <h3>Redes Sociales</h3>
-                        <li>Instagram</li>
-                        <li>Linkedin</li>
-                        <li>Whatsapp</li>
-                    </ul>
+                        <ul>
+                            <li>
+                                <NavLink className={styles.footer_navlink} to="/">
+                                    Inicio
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink className={styles.footer_navlink} to="/empresa">
+                                    Empresa
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink className={styles.footer_navlink} to="/equipos-en-arriendo">
+                                    Equipos en arriendo
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink className={styles.footer_navlink} to="/contacto">
+                                    Contacto
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </article>
+                    <article className={styles.footer_article}>
+                        <h3>Contáctenos</h3>
+                        <ul>
+                            <div className={styles.footer_div_container}>
+                                <CiMail className={styles.footer_mini_logo}/>
+                                <li>l.nunez@mlrental.cl</li>
+                            </div>
+                            <div className={styles.footer_div_container}>
+                                <MdOutlinePhone className={styles.footer_mini_logo}/>
+                                <li>(+56) 973452744</li>
+                            </div>
+                            <div className={styles.footer_div_container}>
+                                <FaMapLocationDot className={styles.footer_mini_logo} />
+                                <li>Exequiel Fernández N°2302, Macul, RM.</li>
+                            </div>
+                        </ul>
+                    </article>
+                    <article className={styles.footer_article}>
+                        <h3>Redes</h3>
+                        <ul>
+                            <SocialLogos />
+                        </ul>
+                    </article>
                 </section>
+            </section>
+            <section className={styles.footer_logo_container}>
+                <NavLink to="/">
+                    <img className={styles.logo_hvt_footer} src={footerLogoImage} alt="HVTest-company-logo" />
+                </NavLink>
             </section>
             <section className={styles.botton_rights}>
                 <ul>

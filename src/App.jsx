@@ -4,13 +4,7 @@ import Header from './Components/Header/Header'
 import HomePage from './Components/HomePage/HomePage'
 import UsPage from './Components/UsPage/UsPage'
 import ContactPage from './Components/ContactPage/ContactPage'
-import ServicesPage from './Components/ServicesPage/ServicesPage'
-import ServiceFirstPage from './Components/ServiceFirstPage/ServiceFirstPage'
-import ServiceSecondPage from './Components/ServiceSecondPage/ServiceSecondPage'
-import ServiceThirdPage from './Components/ServiceThirdPage/ServiceThirdPage'
-import ServiceFourPage from './Components/ServiceFourPage/ServiceFourPage'
 import ServiceFivePage from './Components/ServiceFivePage/ServiceFivePage'
-import ProjectsPage from './Components/ProjectsPage/ProjectsPage'
 import Footer from './Components/Footer/Footer'
 import './App.css'
 
@@ -29,13 +23,7 @@ const AppRoutes = () => {
     { path: '/', element: <HomePage /> },
     { path: '/empresa', element: <UsPage /> },
     { path: '/contacto', element: <ContactPage /> },
-    { path: '/servicios', element: <ServicesPage /> },
-    { path: '/servicios/pruebas', element: <ServiceFirstPage /> },
-    { path: '/servicios/control', element: <ServiceSecondPage /> },
-    { path: '/servicios/mantenimiento', element: <ServiceThirdPage /> },
-    { path: '/servicios/asesoría', element: <ServiceFourPage /> },
-    { path: '/servicios/arriendo', element: <ServiceFivePage /> },
-    { path: '/proyectos', element: <ProjectsPage /> },
+    { path: '/equipos-en-arriendo', element: <ServiceFivePage /> },
   ])
   return (
     <>

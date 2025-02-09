@@ -1,6 +1,9 @@
 .testgear_article_main_container {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     position: relative;
+    width: 50%;
 }
 
 .testgear_article_container {
@@ -9,9 +12,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #FFF;
-    box-shadow: 0px 4px 15px 0px rgba(24, 202, 255, 0.25);
-    border-radius: 30px;
+    background-color: var(--color55);
+    border-radius: 0px;
 }
 
 .testgear_image_container {
@@ -20,13 +22,13 @@
 }
 
 .testgear_image {
-    width: 300px;
+    width: 250px;
     object-fit: cover;
 }
 
 .testgear_name {
     margin: 0;
-    color: #3D3D3D;
+    color: var(--color00);
     text-align: center;
     font-family: "futuraLtBt";
     font-size: 32px;
@@ -38,7 +40,7 @@
 .testgear_brand,
 .testgear_model {
     margin: 0;
-    color: #3D3D3D;
+    color: var(--color22);
     text-align: center;
     font-family: "futuraLtBt";
     font-size: 24px;
@@ -49,37 +51,43 @@
 
 .testgear_buttons_container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin: 16px;
 }
 
 .testgear_description_button,
 .testgear_eett_button  {
     height: 54px;
-    color: #FFF;
+    color: var(--color00);
     font-family: "futuraLtBt";
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    background:  var(--color4);
+    background:  var(--color55);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid;
-    box-shadow: 0px 0px 0px 0px rgba(24, 202, 255, 0.25);
     cursor: pointer;
-    margin: 0;
+    margin: 0 16px 0 0; 
     padding: 0;
 }
 
+.testgear_description_button:hover {
+    background:  var(--color77);
+}
+.testgear_eett_button:hover  {
+    background:  var(--color77);
+}
+
 .testgear_eett_button {
-    border-radius: 0px 0px 30px 30px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 .testgear_eett_button a {
-    color: #FFF;
+    color: var(--color00);
     font-family: "futuraLtBt";
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

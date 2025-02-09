@@ -16,19 +16,19 @@
 
 .card_us_value {
     margin: 0;
-    color: #3D3D3D;
+    color: var(--color00);
     text-align: center;
     font-family: "futuraLtBt";
     font-size: 32px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
 }
 
 .card_us_vaulue_description {
-    margin: 20px 0 0 0;
+    margin: 12px 0 0 0;
     text-align: center;
-    color: #3D3D3D;
+    color: var(--color11);
     text-align: center;
     font-family: "futuraLtBt";
     font-size: 20px;

@@ -23,8 +23,8 @@ function CardTestGears ( { name, brand, model, image, description, characteristi
                 <h2 className={styles.testgear_brand}>Marca: {brand}</h2>
                 <h2 className={styles.testgear_model}>Modelo: {model}</h2>
                 <section className={styles.testgear_buttons_container}>
-                    <button className={styles.testgear_description_button} onClick={showGearDescription}>Descripción</button>
-                    <button className={styles.testgear_eett_button}>
+                    <button className={styles.white_button} onClick={showGearDescription}>Descripción</button>
+                    <button className={styles.white_button}>
                         <a href={`${eett}`} target="_blank" rel="noopener noreferrer">Ficha técnica</a>
                     </button>
                 </section>

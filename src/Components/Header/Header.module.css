@@ -47,7 +47,7 @@ header {
     align-items:flex-start;
     justify-content: center;
     width: 160px;
-    height: 116px;
+    height: 100%;
     padding-top: 44px;
 }
 

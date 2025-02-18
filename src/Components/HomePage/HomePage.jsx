@@ -5,6 +5,7 @@ import CardHomeSercives from "../CardHomeServices/CardHomeServices"
 import CardHomeProjects from "../CardHomeProjects/CardHomeProjects"
 import CardHomeClients from "../CardHomeClients/CardHomeClients"
 import CardSlider from "../CardSlider/CardSlider"
+import { Carousel1 } from "../Carousel1/Carousel1"
 import { TbPointFilled } from "react-icons/tb"
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io"
 import styles from "./HomePage.module.css"
@@ -23,6 +24,18 @@ import imageClientLogo1 from "../../../public/assets/logo-enel-green-power.jpg"
 import imageClientLogo2 from "../../../public/assets/logo-fluxsolar.png"
 import imageClientLogo3 from "../../../public/assets/logo-ingeprover.jpeg"
 import imageClientLogo4 from "../../../public/assets/logo-ionit.jpeg"
+
+import test_gear_1 from "../../../public/assets/mlrental_3.jpg"
+import test_gear_2 from "../../../public/assets/mlrental_5.jpg"
+import test_gear_3 from "../../../public/assets/mlrental_8.jpg"
+import test_gear_4 from "../../../public/assets/mlrental_9.jpg"
+import test_gear_5 from "../../../public/assets/mlrental_11.jpg"
+import test_gear_6 from "../../../public/assets/mlrental_15.jpg"
+import test_gear_7 from "../../../public/assets/mlrental_16.jpg"
+import test_gear_8 from "../../../public/assets/mlrental_17.jpg"
+import test_gear_9 from "../../../public/assets/mlrental_19.jpg"
+
+
 
 
 
@@ -108,7 +121,7 @@ function HomePage () {
         }
     ]
 
-    const backGroungTimedImages = [imageService1, imageService2, imageService3]
+    const backGroungTimedImages = [test_gear_1, test_gear_2, test_gear_3, test_gear_4, test_gear_5, test_gear_6, test_gear_7, test_gear_8, test_gear_9]
 
     const [currentBackgroundTimedImage, setCurrentBackgroundTimedImage] = useState(backGroungTimedImages[0])
 
@@ -133,7 +146,7 @@ function HomePage () {
                     <section className={styles.home_title_container}>
                         <h1 className={styles.home_title}>¿ Necesitas arrendar equipos de pruebas eléctricas ?</h1>
                         <p className={styles.home_middle_paragraph}>Nuestra empresa cuenta con las mejores marcas internacionales en instrumentos para
-                        la ejecución efectiva y segura de las pruebas eléctricas en terreno, atendiendo efectivamente las necesidades de todos nuestros
+                        la ejecución segura y efectiva de las pruebas eléctricas en terreno, atendiendo con alta capacidad de servicio las necesidades de todos nuestros
                         clientes.</p>
                         <NavLink to="/equipos-en-arriendo">
                             <button className={styles.white_button}>Ver Equipos</button>
@@ -141,49 +154,37 @@ function HomePage () {
                     </section>
                 </section>
                 <section className={styles.home_middle_container}>
-                    <h2 className={styles.home_middle_title}>NO PAGUES DÍAS EXTRA EN TUS ARRIENDOS</h2>
-                    <p className={styles.home_middle_paragraph}>Con nosotros puedes entregar los instrumentos los días Sábado Y Domingo.</p>
+                    <h2 className={styles.home_middle_title}>"NO PAGUES DÍAS EXTRA EN TUS ARRIENDOS"</h2>
+                    <p className={styles.home_middle_paragraph}>Con nosotros puedes entregar los instrumentos los días sábado y domingo.</p>
                     <h3 className={styles.home_middle_title}>¿ Cómo arrendar nuestros equipos de pruebas eléctricas ?</h3>
                     <section className={styles.howtorent_container}>
                         <article className={styles.howtorent_step}>
-                            <h4 className={styles.howtorent_step_title}>Titulo paso 1</h4>
-                            <p className={styles.howtorent_paragraph}>Con nosotros puedes entregar los instrumentos los días Sábado Y Domingo.</p>
+                            <h4 className={styles.howtorent_step_title}>Paso 1</h4>
+                            <p className={styles.howtorent_paragraph}>Envíanos tu solicitud o requerimiento.</p>
                         </article>
                         <article className={styles.howtorent_step}>
-                            <h4 className={styles.howtorent_step_title}>Titulo paso 2</h4>
-                            <p className={styles.howtorent_paragraph}>Con nosotros puedes entregar los instrumentos los días Sábado Y Domingo.</p>
+                            <h4 className={styles.howtorent_step_title}>Paso 2</h4>
+                            <p className={styles.howtorent_paragraph}>Te enviaremos la cotización respectiva.</p>
                         </article>
                         <article className={styles.howtorent_step}>
-                            <h4 className={styles.howtorent_step_title}>Titulo paso 3</h4>
-                            <p className={styles.howtorent_paragraph}>Con nosotros puedes entregar los instrumentos los días Sábado Y Domingo.</p>
+                            <h4 className={styles.howtorent_step_title}>Paso 3</h4>
+                            <p className={styles.howtorent_paragraph}>Recibimos orden de compra.</p>
                         </article>
                         <article className={styles.howtorent_step}>
-                            <h4 className={styles.howtorent_step_title}>Titulo paso 4</h4>
-                            <p className={styles.howtorent_paragraph}>Con nosotros puedes entregar los instrumentos los días Sábado Y Domingo.</p>
+                            <h4 className={styles.howtorent_step_title}>Paso 4</h4>
+                            <p className={styles.howtorent_paragraph}>Enviamos contrato de arriendo.</p>
                         </article>
                         <article className={styles.howtorent_step}>
-                            <h4 className={styles.howtorent_step_title}>Titulo paso 5</h4>
-                            <p className={styles.howtorent_paragraph}>Con nosotros puedes entregar los instrumentos los días Sábado Y Domingo.</p>
+                            <h4 className={styles.howtorent_step_title}>Paso 5</h4>
+                            <p className={styles.howtorent_paragraph}>Entrega de equipo(s) (Previo contrato de arriendo firmado - Cheque en garantía y pago del arriendo respectivo).</p>
                         </article>
                     </section>
                 </section>
-                {/* <section className={styles.home_services_container}>
-                    <h2 className={styles.home_services_title}>Nuestros Equipos</h2>
-                    <section className={styles.home_services_arrows_cards_container}>
-                        <section className={styles.home_services_cards_container}>
-
-                            {
-                                <CardHomeSercives/>
-                            }
-
-
-                        </section>
-                    </section>
-                </section> */}
-
-
+                <section className={styles.home_carousel_container}>
+                    <h4 className={styles.home_carousel_title}>Nuestros Equipos</h4>
+                </section>
+                <Carousel1/>
             </section>
-
         </section>
     )
 }

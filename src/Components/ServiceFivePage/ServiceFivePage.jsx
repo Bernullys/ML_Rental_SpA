@@ -194,7 +194,7 @@ function ServiceFivePage () {
                     Nuestra empresa comprometida con la importancia de la infraestructura eléctrica ofrece una amplia gama de
                     servicios específicos en el área de ensayos eléctricos, entre los cuales tenemos el arriendo de equipamiento
                     para la ejecución de pruebas eléctricas, contando con un diverso stock para cumplir las necesidades de nuestros
-                    clientes y así permitir realizar puestas en servicio y ensayos bajo criterios de las normas nacionales e internacionales.
+                    clientes y así permitir realizar la puesta en servicio y ensayos bajo el criterio de normas nacionales e internacionales.
                 </p>
             </section>
             <section className={styles.servicefive_cards_main_container}>

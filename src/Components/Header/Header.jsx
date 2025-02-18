@@ -48,7 +48,7 @@ function Header () {
                         <NavLink
                             to="/contacto"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}>
-                                CONTACTO
+                                INSTRUMENTOS Y ACCESORIOS
                         </NavLink>
                     </li>
                 </ul>

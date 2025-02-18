@@ -24,7 +24,9 @@ function ContactPage () {
     return (
         <section className={styles.contact_main_section_container}>
             <h1 className={styles.contact_title}>Contáctate con nosotros</h1>
-            <p className={styles.contact_paragraph}>Para solicitar una cotización, realizar consultas o compartir sugerencias, por favor envíe los siguientes datos junto con su mensaje.</p>
+            <p className={styles.contact_paragraph}>Dependiendo de las necesidades y solicitudes de nuestros clientes, contamos con el servicio
+            de suministrar cualquier equipo, instrumento, herramienta y/o accesorios eléctrico que el cliente requiera, envíanos tu requerimiento
+            y lo encontraremos.</p>
             <form   
                 onSubmit={sendEmail}
                 method="post"
@@ -48,7 +50,7 @@ function ContactPage () {
                     </section>
                     <section className={styles.contact_form_inner_container}>
                         <section className={styles.contact_form_sections}>
-                            <label for="phone">Telefono *</label>
+                            <label for="phone">Teléfono *</label>
                             <input type="tel" name="phone" id="phone" placeholder="Número telefonico" required/>
                         </section>
                         <br />

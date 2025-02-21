@@ -5,7 +5,6 @@ import HomePage from './Components/HomePage/HomePage'
 import UsPage from './Components/UsPage/UsPage'
 import ContactPage from './Components/ContactPage/ContactPage'
 import ServiceFivePage from './Components/ServiceFivePage/ServiceFivePage'
-import Accordion from './Components/Accordion/Accordion'
 import Footer from './Components/Footer/Footer'
 import './App.css'
 
@@ -39,8 +38,7 @@ function App() {
   return (
     <HashRouter>
       <Header />
-      <Accordion />
-      <AppRoutes />
+      <AppRoutes/>
       <Footer />
     </HashRouter>
   )

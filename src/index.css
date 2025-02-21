@@ -21,6 +21,16 @@
     --color88: #30698C;
     --color99: #F2F2F2;
 
+    --textsize1: 16px;
+    --textsize2: 17px;
+    --textsize3: 18px;
+    --subttitle1: 28px;
+    --subttitle2: 32px;
+    --subttitle3: 36px;
+    --title1: 48px;
+    --title2: 56px;
+    --title3: 64px;
+
 }
 
 body {

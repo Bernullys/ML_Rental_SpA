@@ -1,14 +1,14 @@
 header {
-    position: fixed;
+
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; 
+    z-index: 10; 
 }
 
 .header_nav_container {
     width: auto;
-    height: 160px;
+    height: 124px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,8 +24,8 @@ header {
 }
 
 .header_logo_container {
-    height: 150px;
-    width: 400px;
+    height: 100px;
+    width: 280px;
     background: url("../../../public/assets/logo-mlrental-removebg.png");
     background-size: cover;
 }
@@ -48,7 +48,7 @@ header {
     justify-content: center;
     width: 160px;
     height: 100%;
-    padding-top: 44px;
+    padding-top: 24px;
 }
 
 .header_nav_ul li:hover {
@@ -59,7 +59,7 @@ header {
     text-decoration: none;
     padding: 24px 0 24px;
     font-family: "futuraLtBt";
-    font-size: 20px;
+    font-size: var(--textsize1);
     font-style: normal;
     color: var(--color00);
     font-weight: 500;

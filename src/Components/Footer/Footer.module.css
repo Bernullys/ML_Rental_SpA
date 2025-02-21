@@ -1,5 +1,4 @@
 .footer_main_container {
-    position: static;
     bottom: 0px;
     display: flex;
     flex-direction: column;

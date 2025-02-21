@@ -1,5 +1,3 @@
-
-import { IoIosPeople } from "react-icons/io";
 import { TbEyeStar } from "react-icons/tb";
 import { LiaBullseyeSolid } from "react-icons/lia"
 
@@ -39,11 +37,11 @@ function Us () {
                 {
                     valuesInfo.map(values => (
                         <CardUsValues 
-                            key={values.id}
-                            valueIcon={values.valueIcon}
-                            value={values.value}
-                            description={values.description}/>
-                ))}
+                        key={values.id}
+                        valueIcon={values.valueIcon}
+                        value={values.value}
+                        description={values.description}/>
+                        ))}
             </section>
         </section>
     )

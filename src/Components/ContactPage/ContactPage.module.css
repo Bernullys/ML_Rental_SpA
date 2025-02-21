@@ -4,9 +4,7 @@
     align-items: center;
     height:fit-content;
     flex-shrink: 0;
-    margin-top: 0.5px;
     background-color: var(--color55);
-    margin-top: 160px;
 }
 
 .contact_title {

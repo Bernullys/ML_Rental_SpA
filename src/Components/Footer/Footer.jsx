@@ -7,7 +7,7 @@ import { FaMapLocationDot } from "react-icons/fa6";
 
 import styles from "./Footer.module.css"
 
-import footerLogoImage from "../../../public/assets/logo-mlrental-footer.png"
+import footerLogoImage from "../../../public/assets/logo-mlrental-removebg.png"
 
 function Footer () {
     return (

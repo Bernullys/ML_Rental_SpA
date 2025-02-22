@@ -11,6 +11,8 @@ import imageFiveService6 from "../../../public/assets/ALROCMF360.png"
 import imageFiveService7 from "../../../public/assets/MEGGERS1-1068.png"
 import imageFiveService8 from "../../../public/assets/AEMC6472.png"
 import imageFiveService9 from "../../../public/assets/AEMC6250.png"
+import imageFiveServiceWR14 from "../../../public/assets/WR14.png"
+
 
 import pdfFiveService1 from "../../../public/assets/RMO-200G.pdf"
 import pdfFiveService2 from "../../../public/assets/AEMC3731.pdf"
@@ -21,10 +23,24 @@ import pdfFiveService6 from "../../../public/assets/MF360S.pdf"
 import pdfFiveService7 from "../../../public/assets/MEGGERS1-1068.pdf"
 import pdfFiveService8 from "../../../public/assets/AEMC6472.pdf"
 import pdfFiveService9 from "../../../public/assets/AEMC6250.pdf"
+import pdfFiveService10 from "../../../public/assets/WR14.pdf"
+
 
 
 
 const testGears = [
+    {
+        name: "Medidor de Resistencia de Devanado",
+        brand: "Raytech",
+        model: "WR14",
+        image: imageFiveServiceWR14,
+        description: `Los medidores de resistencia de bobinado digitales Raytech son una versión mejorada del sistema de resistencia de
+        bobinado con el circuito desmagnetizador más avanzado. Están diseñados para un alto grado de precisión en la medición de cargas
+        inductivas de muy baja resistencia. Arquitectura totalmente automática basada en múltiples microprocesadores.
+        Estos sistemas están diseñados para realizar lecturas de alta precisión en el sitio con precisión de laboratorio.`,
+        characteristics: ``,
+        eett: pdfFiveService10
+    },
     {
         name: "Micróhmetro 200 A",
         brand: "Dv Power",

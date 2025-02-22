@@ -8,10 +8,10 @@
 }
 
 .contact_title {
-    margin: 110px 0 50px 0;
+    margin: 100px 0 24px 0;
     color: var(--color00);
     font-family: "futuraLtBt";
-    font-size: 48px;
+    font-size: var(--title1);
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
@@ -22,10 +22,10 @@
 .contact_paragraph {
     margin: 0px 0px 30px 0px;
     width: 50%;
-    text-align: center;
+    text-align: justify;
     color: var(--color11);
     font-family: "futuraLtBt";
-    font-size: 20px;
+    font-size: var(--textsize3);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -54,7 +54,7 @@
 label {
     color: var(--color11);
     font-family: "futuraLtBt";
-    font-size: 20px;
+    font-size: var(--textsize3);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -68,7 +68,7 @@ select {
     border-radius: 0px;
     border: 1px solid  var(--color77);
     font-family: "futuraLtBt";
-    font-size: 18px;
+    font-size: var(--textsize3);
     font-style: normal;
     line-height: normal;
     padding-left: 12px;
@@ -80,40 +80,27 @@ input::after {
     border-color:  var(--color11);
 }
 
-#message {
-    height: 20%;
-
-
-}
-
 .button_contact {
-    display: flex;
-    width: 189px;
-    height: 55px;
+    width: 140px;
+    height: 44px;
     padding: 5px;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
     border-radius: 0px;
-    background:  var(--color77);
-    color: #FFF;
+    border: 0.888px solid  var(--color77);
+    color:  var(--color77);
     text-align: center;
     font-family: "futuraLtBt";
-    font-size: 20px;
+    font-size: var(--textsize1);
     font-style: normal;
-    font-weight: 600;
     line-height: normal;
-    border: none;
+    background: transparent;
     cursor: pointer;
-    margin-bottom: 110px;
-    margin-top: 30px;
+    margin: 24px 0px 0px 0px;
 }
 
 .button_contact:hover {
-    background-color: rgba(0, 0, 0, 0);
-    color:  var(--color77);
-    font-weight: 500;
-    border:  var(--color77) solid 1px;
+    background-color: var(--color11);
+    color:  var(--color55);
+    border:  var(--color00) solid 1px;
 }
 
 textarea {
@@ -127,6 +114,7 @@ textarea {
     line-height: normal;
     background-color: var(--color44);
     color: var(--color00);
+    padding-left: 12px;
 }
 
 @media (max-width: 450px) {

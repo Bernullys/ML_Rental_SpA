@@ -12,19 +12,21 @@ import image4 from "./AEMCDTR8510.png";
 import image5 from "./ALROCMF360.png";
 import image6 from "./IBEX2000.png";
 import image7 from "./MEGGERS1-1068.png";
-import image8 from "./PUNTASVLF.png";
+import image8 from "./puntanegra.png";
 import image9 from "./RMO200G.png";
+import image10 from "./WR14.png";
+
 import { NavLink } from "react-router-dom";
 
 
 const slides = [
   {
-    title: "Pinza medición de puesta a tierra",
-    image: image1,
-  },
-  {
     title: "Micrómetro 10 A",
     image: image2,
+  },
+  {
+    title: "Pinza medición de puesta a tierra",
+    image: image1,
   },
   {
     title: "Telurometro",
@@ -53,6 +55,10 @@ const slides = [
   {
     title: "Micrómetro 200 A",
     image: image9,
+  },
+  {
+    title: "Medidor de resistencia de devanado",
+    image: image10,
   },
 ];
 

@@ -9,7 +9,6 @@ function CardTestGears ( { name, brand, model, image, description, characteristi
 
     function showGearDescription () {
         setShowDescription(!showDescription)
-        console.log("APPEARRRS")
     }
 
 

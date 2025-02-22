@@ -4,7 +4,8 @@
 
 .us_top_section_image_container {
     width: auto;
-    height: 80vh;
+    height: auto;
+    padding: 100px 0 0 0;
     background-position: center;
     background-color: var(--color55);
     display: flex;
@@ -45,11 +46,10 @@
 
 .us_paragraph {
     margin: 0px 0px 0px 0px;
-    text-align: center;
+    text-align: justify;
     color: var(--color11);
-    text-align: center;
     font-family: "futuraLtBt";
-    font-size: 24px;
+    font-size: var(--textsize3);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -58,32 +58,20 @@
 
 .us_lower_section_characteristics_main_container {
     width: auto;
-    height: 40vh;
+    height: auto;
     background-position: center;
     background-color: var(--color55);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 160px;
+    padding-bottom: 100px;
 }
 
 .us_lower_section_characteristics_main_container svg {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     color:  var(--color77);
 }
-
-
-
-
-
-.us_middle_section_cards_container {
-    display: flex;
-    justify-content: space-around;
-    width: 65%;
-    margin: 0 0 48px 0;
-}
-
 
 
 @media (max-width: 960px) {

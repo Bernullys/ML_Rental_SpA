@@ -19,19 +19,19 @@
     color: var(--color00);
     text-align: center;
     font-family: "futuraLtBt";
-    font-size: 32px;
+    font-size: var(--subttitle1);
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
 }
 
 .card_us_vaulue_description {
-    margin: 12px 0 0 0;
+    margin: 24px 0 0 0;
     text-align: center;
     color: var(--color11);
-    text-align: center;
+    text-align: justify;
     font-family: "futuraLtBt";
-    font-size: 20px;
+    font-size: var(--textsize3);
     font-style: normal;
     font-weight: 400;
     line-height: normal;

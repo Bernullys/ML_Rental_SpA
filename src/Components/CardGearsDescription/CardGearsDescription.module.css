@@ -1,29 +1,28 @@
 .card_gear_des_main_container {
-    width: 90vw;
-    height: 90vh;
-    background: var(--color4);
+    width: 70vw;
+    height: 70vh;
+    background: var(--color77);
     position: relative;
-    box-shadow: 0px 4px 15px 0px rgba(24, 202, 255, 0.25);
 }
 
 .card_gear_des_title {
-    color: #FFF;
+    color: var(--color00);
     text-align: center;
     font-family: "futuraLtBt";
-    font-size: 50px;
+    font-size: var(--title1);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 50px;
     margin: 100px 0 0 0;
 }
 
 .card_gear_des_paragraph {
     display: block;
-    margin: 40px 40px 40px 40px;
-    color: #FFF;
+    margin: 40px 200px 40px 200px;
+    color: var(--color00);
     text-align: justify;
     font-family: "futuraLtBt";
-    font-size: 20px;
+    font-size: var(--textsize3);
     font-style: normal;
     font-weight: 400;
     line-height: 150%;

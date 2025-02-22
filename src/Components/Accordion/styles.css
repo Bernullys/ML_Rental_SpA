@@ -14,7 +14,7 @@
     padding: 0 10px 0 20px;
     border-radius: 0px;
     cursor: pointer;
-    background-color: var(--color55);
+    background-color: var(--color77);
     border: 1px solid var(--color77);
     margin-bottom: 10px;
     color: var(--color00);
@@ -22,7 +22,7 @@
 
   article header:hover {
     background-color: var(--color11);
-    color:  var(--color55);
+    color:  var(--color77);
 
   }
   
@@ -33,15 +33,16 @@
   article h2 {
     margin: 0;
     font-size: var(--textsize3);
-    color: var(--color77);
+    color: var(--color00);
     font-weight: 500;
   }
 
   
   article p {
     padding: 0 20px 10px;
+    text-align: justify;
     line-height: 1.7;
-    font-size: var(--textsize1);
+    font-size: var(--textsize3);
     color: var(--color11);
   }
   

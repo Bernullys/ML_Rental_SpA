@@ -32,9 +32,9 @@
     color: var(--color00);
     text-align: center;
     font-family: "futuraLtBt";
-    font-size: 32px;
+    font-size: var(--subttitle1);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
 }
 
@@ -44,9 +44,9 @@
     color: var(--color22);
     text-align: center;
     font-family: "futuraLtBt";
-    font-size: 24px;
+    font-size: var(--subttitle1);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal; 
 }
 
@@ -57,36 +57,39 @@
 }
 
 .white_button {
-    width: 189px;
-    height: 55px;
+    width: 140px;
+    height: 44px;
     padding: 5px;
     border-radius: 0px;
     border: 0.888px solid  var(--color77);
     color:  var(--color77);
     text-align: center;
     font-family: "futuraLtBt";
-    font-size: 20px;
+    font-size: var(--textsize1);
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
     background: transparent;
     cursor: pointer;
 }
 
 .white_button:hover {
-    background-color: var(--color00);
-    color:  var(--color11);
-    border:  var(--color55) solid 1px;
+    background-color: var(--color11);
+    color:  var(--color55);
+    border:  var(--color00) solid 1px;
 }
 
 .white_button a {
     color:  var(--color77);
     font-family: "futuraLtBt";
-    font-size: 18px;
+    font-size: var(--textsize1);
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
     text-decoration: none;
+}
+
+.white_button a:hover {
+    background-color: var(--color11);
+    color:  var(--color55);
 }
 
 .testgear_show_description {
@@ -106,8 +109,8 @@
 
 .card_gear_des_close_icon {
     position: absolute;
-    right: 20px;
-    top: 80px;
+    right: 40px;
+    top: 40px;
     cursor: pointer;
     color:  white;
     width: 44px;

@@ -1,4 +1,3 @@
-
 import styles from "./CardGearsDescription.module.css"
 
 function CardGearsDescription ( { name, description }) {

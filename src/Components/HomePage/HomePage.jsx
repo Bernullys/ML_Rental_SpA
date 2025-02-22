@@ -4,20 +4,17 @@ import Accordion from "../Accordion/Accordion"
 import styles from "./HomePage.module.css"
 import { Carousel1 } from "../Carousel1/Carousel1"
 
-import test_gear_1 from "../../../public/assets/mlrental_3.jpg"
-import test_gear_2 from "../../../public/assets/mlrental_5.jpg"
-import test_gear_3 from "../../../public/assets/mlrental_8.jpg"
-import test_gear_4 from "../../../public/assets/mlrental_9.jpg"
-import test_gear_5 from "../../../public/assets/mlrental_11.jpg"
+import test_gear_1 from "../../../public/assets/mlrental_1.jpg"
+import test_gear_3 from "../../../public/assets/mlrental_19.jpg"
+import test_gear_4 from "../../../public/assets/bg1.jpg"
+import test_gear_2 from "../../../public/assets/bg2.jpg"
+import test_gear_5 from "../../../public/assets/bg3.jpg"
 import test_gear_6 from "../../../public/assets/mlrental_15.jpg"
-import test_gear_7 from "../../../public/assets/mlrental_16.jpg"
-import test_gear_8 from "../../../public/assets/mlrental_17.jpg"
-import test_gear_9 from "../../../public/assets/mlrental_19.jpg"
 
 
 function HomePage () {
 
-    const backGroungTimedImages = [test_gear_1, test_gear_2, test_gear_3, test_gear_4, test_gear_5, test_gear_6, test_gear_7, test_gear_8, test_gear_9]
+    const backGroungTimedImages = [test_gear_1, test_gear_2, test_gear_3, test_gear_4, test_gear_5, test_gear_6 ]
 
     const [currentBackgroundTimedImage, setCurrentBackgroundTimedImage] = useState(backGroungTimedImages[0])
 

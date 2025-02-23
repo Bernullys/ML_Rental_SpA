@@ -73,7 +73,7 @@
     color:  var(--color77);
 }
 
-
+/* 
 @media (max-width: 960px) {
     .us_middle_section_cards_container {
         width: 90%;
@@ -151,4 +151,4 @@
     .us_lower_section_main_container {
         height: 950px;
     }
-}
+} */

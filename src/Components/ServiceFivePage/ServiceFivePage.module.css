@@ -42,7 +42,7 @@
     width: 60%;
 }
 
-@media (max-width: 470px) {
+/* @media (max-width: 470px) {
     .servicefive_title {
         font-size: 44px;
     }
@@ -52,4 +52,4 @@
     .servicefive_title {
         font-size: 32px;
     }
-}
+} */

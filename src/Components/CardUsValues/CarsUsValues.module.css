@@ -37,7 +37,7 @@
     line-height: normal;
 }
 
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
     .card_us_vaulue_description {
         display: none;
     }
@@ -56,4 +56,4 @@
     .card_us_values_container {
         display: none;
     }
-}
+} */

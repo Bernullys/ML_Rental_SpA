@@ -117,7 +117,7 @@ textarea {
     padding-left: 12px;
 }
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
     .contact_title {
         font-size: 36px;
     }
@@ -140,4 +140,4 @@ textarea {
     .contact_form {
         width: 80%;
     }
-}
+} */

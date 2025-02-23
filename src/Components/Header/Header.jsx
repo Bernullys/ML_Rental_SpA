@@ -41,14 +41,14 @@ function Header () {
                             to="/equipos-en-arriendo"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}
                             >
-                                EQUIPOS EN ARRIENDO
+                                INSTRUMENTOS Y ACCESORIOS
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
                             to="/contacto"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}>
-                                INSTRUMENTOS Y ACCESORIOS
+                                CONTACTO
                         </NavLink>
                     </li>
                 </ul>

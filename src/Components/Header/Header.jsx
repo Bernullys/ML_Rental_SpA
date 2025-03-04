@@ -17,7 +17,7 @@ function Header () {
                 <NavLink className={styles.a_logo} to="/">
                     <section 
                         className={styles.header_logo_container}
-                        onClick={toggleMenu}
+                        // onClick={toggleMenu}
                     ></section>
                 </NavLink>
 
@@ -26,14 +26,14 @@ function Header () {
                         <NavLink
                             to="/"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}>
-                                INICIO
+                                Inicio
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
                             to="/empresa"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}>
-                                EMPRESA
+                                Empresa
                         </NavLink>
                     </li>
                     <li>
@@ -41,14 +41,14 @@ function Header () {
                             to="/equipos-en-arriendo"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}
                             >
-                                INSTRUMENTOS Y ACCESORIOS
+                                Instrumentos y Accesorios
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
                             to="/contacto"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}>
-                                CONTACTO
+                                Contacto
                         </NavLink>
                     </li>
                 </ul>

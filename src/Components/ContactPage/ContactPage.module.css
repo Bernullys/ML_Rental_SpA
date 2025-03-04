@@ -65,7 +65,7 @@ input,
 select {
     width: 90%;
     height: 40px;
-    border-radius: 0px;
+    border-radius: 6px;
     border: 1px solid  var(--color77);
     font-family: "futuraLtBt";
     font-size: var(--textsize3);
@@ -84,7 +84,7 @@ input::after {
     width: 140px;
     height: 44px;
     padding: 5px;
-    border-radius: 0px;
+    border-radius: 16px;
     border: 0.888px solid  var(--color77);
     color:  var(--color77);
     text-align: center;
@@ -106,7 +106,7 @@ input::after {
 textarea {
     width: 90%;
     height: 160px;
-    border-radius: 0px;
+    border-radius: 6px;
     border: 1px solid  var(--color77);
     font-family: "futuraLtBt";
     font-size: 18px;

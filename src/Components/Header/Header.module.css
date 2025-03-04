@@ -45,7 +45,7 @@ header {
     display: flex;
     align-items:flex-start;
     justify-content: center;
-    width: 160px;
+    width: 120px;
     height: 100%;
     padding-top: 0;
 }
@@ -58,7 +58,7 @@ header {
     text-decoration: none;
     padding: 24px 0 24px;
     font-family: "futuraLtBt";
-    font-size: var(--textsize1);
+    font-size: var(--textsize2);
     font-style: normal;
     color: var(--color00);
     font-weight: 200;

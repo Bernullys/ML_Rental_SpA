@@ -21,7 +21,7 @@ import { NavLink } from "react-router-dom";
 
 const slides = [
   {
-    title: "Micrómetro 10 A",
+    title: "Microohmímetro 10 A",
     image: image2,
   },
   {
@@ -29,7 +29,7 @@ const slides = [
     image: image1,
   },
   {
-    title: "Telurometro",
+    title: "Telurómetro",
     image: image3,
   },
   {
@@ -53,11 +53,11 @@ const slides = [
     image: image8,
   },
   {
-    title: "Micrómetro 200 A",
+    title: "Microohmímetro 200 A",
     image: image9,
   },
   {
-    title: "Medidor de resistencia de devanado",
+    title: "Medidor de resistencia de devanados",
     image: image10,
   },
 ];

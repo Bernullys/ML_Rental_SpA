@@ -40,7 +40,7 @@ function Footer () {
                         </ul>
                     </article>
                     <article className={styles.footer_article}>
-                        <h3>Contáctenos</h3>
+                        <h3>Contáctanos</h3>
                         <ul>
                             <div className={styles.footer_div_container}>
                                 <CiMail className={styles.footer_mini_logo}/>

@@ -30,7 +30,7 @@ import pdfFiveService10 from "../../../public/assets/WR14.pdf"
 
 const testGears = [
     {
-        name: "Medidor de Resistencia de Devanado",
+        name: "Medidor de Resistencia de Devanados",
         brand: "Raytech",
         model: "WR14",
         image: imageFiveServiceWR14,
@@ -42,7 +42,7 @@ const testGears = [
         eett: pdfFiveService10
     },
     {
-        name: "Micróhmetro 200 A",
+        name: "Microohmímetro 200 A",
         brand: "Dv Power",
         model: "RMO 200G",
         image: imageFiveService1,
@@ -161,7 +161,7 @@ const testGears = [
         eett: pdfFiveService7
     },
     {
-        name: "Telurometro",
+        name: "Telurómetro",
         brand: "Aemc",
         model: "6472",
         image: imageFiveService8,
@@ -179,7 +179,7 @@ const testGears = [
         eett: pdfFiveService8
     },
     {
-        name: "Micróhmetro 10 A",
+        name: "Microohmímetro 10 A",
         brand: "Aemc",
         model: "6250",
         image: imageFiveService9,

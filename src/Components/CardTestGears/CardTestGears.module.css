@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--color44);
-    border-radius: 0px;
+    border-radius: 8px;
 }
 
 .testgear_image_container {
@@ -52,7 +52,7 @@
 
 .testgear_buttons_container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0 16px 16px 16px;
 }
 
@@ -60,7 +60,7 @@
     width: 140px;
     height: 44px;
     padding: 5px;
-    border-radius: 0px;
+    border-radius: 12px;
     border: 0.888px solid  var(--color77);
     color:  var(--color77);
     text-align: center;

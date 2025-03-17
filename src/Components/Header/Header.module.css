@@ -7,19 +7,17 @@ header {
 
 .header_nav_container {
     width: auto;
-    height: 81px;
+    height: 64px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: var(--sm);
+    justify-content: space-between;
     font-weight: bold;
-    color: var(--color11);
-    background: var(--color55);
+    background: var(--color00);
     opacity: 1;
 }
 
 .a_logo {
-    margin-left: 80px;
+    margin-left: 10px;
 }
 
 .header_logo_container {
@@ -36,7 +34,7 @@ header {
     align-items: center;
     justify-content: center;
     list-style: none;
-    margin: 0px 0px 0px 64px;
+    margin: 0px 0px 0px 0px;
     padding: 0;
 }
 
@@ -45,34 +43,31 @@ header {
     display: flex;
     align-items:flex-start;
     justify-content: center;
-    width: 120px;
+    width: 150px;
     height: 100%;
     padding-top: 0;
 }
 
 .header_nav_ul li:hover {
-    background-color: var(--color44);
+    background-color: var(--color22);
 }
 
 .header_nav_ul li a {
     text-decoration: none;
-    padding: 24px 0 24px;
+    padding: 16px 0 24px;
     font-family: "futuraLtBt";
-    font-size: var(--textsize2);
+    font-size: var(--textsize1);
     font-style: normal;
-    color: var(--color00);
-    font-weight: 200;
+    color: var(--color55);
+    font-weight: 400;
     line-height: normal;
     text-align: center;
 }
 
-.header_nav_ul li a:hover {
-    color: var(--color77);
-}
 
-.header_nav_ul li .active_page {
+/* .header_nav_ul li .active_page {
     color: var(--color77);
-}
+} */
 
 /* This is for the menu when width < 960px */
 

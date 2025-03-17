@@ -26,14 +26,14 @@ function Header () {
                         <NavLink
                             to="/"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}>
-                                Inicio
+                                INICIO
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
                             to="/empresa"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}>
-                                Empresa
+                                EMPRESA
                         </NavLink>
                     </li>
                     <li>
@@ -41,14 +41,14 @@ function Header () {
                             to="/equipos-en-arriendo"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}
                             >
-                                Instrumentos y Accesorios
+                                INSTRUMENTOS Y ACCESORIOS
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
                             to="/contacto"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}>
-                                Contacto
+                                CONTACTO
                         </NavLink>
                     </li>
                 </ul>

@@ -1,8 +1,7 @@
 .card_us_values_main_container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    justify-content: center;
+    width: 30%;
     align-items: center;
 }
 
@@ -11,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 100%;
 }
 
 .card_us_value {
@@ -28,7 +27,7 @@
 .card_us_vaulue_description {
     margin: 24px 0 0 0;
     text-align: center;
-    color: var(--color11);
+    color: var(--color00);
     text-align: justify;
     font-family: "futuraLtBt";
     font-size: var(--textsize3);

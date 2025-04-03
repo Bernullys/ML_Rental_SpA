@@ -34,14 +34,16 @@ function Us () {
                 </section>
             </section>
             <section className={styles.us_lower_section_characteristics_main_container}>
-                {
-                    valuesInfo.map(values => (
-                        <CardUsValues 
-                        key={values.id}
-                        valueIcon={values.valueIcon}
-                        value={values.value}
-                        description={values.description}/>
-                        ))}
+                <section className={styles.card_values_container}>
+                    {
+                        valuesInfo.map(values => (
+                            <CardUsValues 
+                            key={values.id}
+                            valueIcon={values.valueIcon}
+                            value={values.value}
+                            description={values.description}/>
+                            ))}
+                </section>
             </section>
         </section>
     )

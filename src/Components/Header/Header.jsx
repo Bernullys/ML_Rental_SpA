@@ -1,5 +1,11 @@
 import React, { useState } from "react"
 import { NavLink } from "react-router-dom"
+import { IoBriefcaseSharp } from "react-icons/io5";
+import { IoMailSharp } from "react-icons/io5";
+import { SiSpeedtest } from "react-icons/si";
+import { IoIosContact } from "react-icons/io";
+
+
 import styles from "./Header.module.css"
 
 function Header () {
@@ -11,29 +17,23 @@ function Header () {
     }
 
     return (
-        <header>
+        <header className={styles.header_header}>
             <nav className={styles.header_nav_container}>
-
-                <NavLink className={styles.a_logo} to="/">
-                    <section 
-                        className={styles.header_logo_container}
-                        // onClick={toggleMenu}
-                    ></section>
-                </NavLink>
-
                 <ul className={styles.header_nav_ul}>
                     <li>
                         <NavLink
                             to="/"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}>
-                                INICIO
+                                <IoIosContact  className={styles.header_icons}/>
+                                Inicio         
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
                             to="/empresa"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}>
-                                EMPRESA
+                                <IoBriefcaseSharp className={styles.header_icons}/> 
+                                Empresa
                         </NavLink>
                     </li>
                     <li>
@@ -41,14 +41,16 @@ function Header () {
                             to="/equipos-en-arriendo"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}
                             >
-                                INSTRUMENTOS Y ACCESORIOS
+                                <SiSpeedtest  className={styles.header_icons} />
+                                Instrumentos y Accesorios
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
                             to="/contacto"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}>
-                                CONTACTO
+                                <IoMailSharp  className={styles.header_icons}/>
+                                Contacto
                         </NavLink>
                     </li>
                 </ul>

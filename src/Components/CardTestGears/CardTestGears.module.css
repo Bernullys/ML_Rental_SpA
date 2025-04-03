@@ -1,18 +1,18 @@
 .testgear_article_main_container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     position: relative;
-    width: 50%;
+    width: 33.33%;
 }
 
 .testgear_article_container {
-    margin: 18px;
-    width: 380px;
-    height: 500px;
+    margin: 10px;
+    width: 300px;
+    height: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: var(--color44);
     border-radius: 8px;
 }
@@ -32,9 +32,9 @@
     color: var(--color00);
     text-align: center;
     font-family: "futuraLtBt";
-    font-size: var(--subttitle1);
+    font-size: var(--textsize3);
     font-style: normal;
-    font-weight: 500;
+    font-weight: 200;
     line-height: normal;
 }
 
@@ -44,9 +44,9 @@
     color: var(--color22);
     text-align: center;
     font-family: "futuraLtBt";
-    font-size: var(--subttitle1);
+    font-size: var(--textsize3);
     font-style: normal;
-    font-weight: 500;
+    font-weight: 200;
     line-height: normal; 
 }
 
@@ -57,39 +57,36 @@
 }
 
 .white_button {
-    width: 140px;
-    height: 44px;
+    width: 100px;
+    height: 36px;
     padding: 5px;
-    border-radius: 12px;
+    border-radius: 16px;
     border: 0.888px solid  var(--color77);
-    color:  var(--color77);
+    color:  var(--color00);
     text-align: center;
     font-family: "futuraLtBt";
     font-size: var(--textsize1);
-    font-style: normal;
     line-height: normal;
-    background: transparent;
+    background: var(--color77);
     cursor: pointer;
 }
 
 .white_button:hover {
-    background-color: var(--color11);
-    color:  var(--color55);
-    border:  var(--color00) solid 1px;
+    background-color: transparent;
+    border:  var(--color77) solid 1px;
 }
 
 .white_button a {
-    color:  var(--color77);
+    color:  var(--color00);
     font-family: "futuraLtBt";
     font-size: var(--textsize1);
     font-style: normal;
-    line-height: normal;
     text-decoration: none;
 }
 
 .white_button a:hover {
-    background-color: var(--color11);
-    color:  var(--color55);
+    background-color: transparent;
+
 }
 
 .testgear_show_description {

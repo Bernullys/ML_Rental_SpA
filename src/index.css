@@ -1,9 +1,4 @@
 :root {
-    /*More like the logo color*/
-    --color4: #0078A7;
-    --color5: #EAFEFF;
-    --color2: #18CAFF;
-    
 
     /* Paleta que me gusta:
     */
@@ -19,7 +14,8 @@
     --color66: #1E3E59;
     --color77: #52B5F2;
     --color88: #30698C;
-    --color99: #F2F2F2;
+    --color99: #f9a01b;
+    --color1: #0b2fb1;
 
     --textsize1: 16px;
     --textsize2: 17px;
@@ -43,4 +39,213 @@ body {
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 87%; /*Modified by me*/
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: var(--color00); /*Modified by me*/
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .5;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 36px; /*Modified by me*/
+    line-height: 0.75; /*Modified by me*/
+    opacity: 1;
+    color: var(--color00);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: 45%; /*Modified by me*/
+}
+[dir='rtl'] .slick-prev
+{
+    right: 25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: 45%; /*Modified by me*/
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: 25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 0px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: 80px; /*Modified by me*/
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 0.5%; /*Modified by me*/
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 7px; /*Modified by me*/
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .8; /*Modified by me*/
+    color: var(--color66); /*Modified by me*/
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: 1; /*Modified by me*/
+    color: var(--color77); /*Modified by me*/
+}
+
+/*------------------*/
+
+.slick-list {
+    height: 700px;
+}
+
+.slick-track {
+    height: 700px;
+    padding: 0;
+    margin: 0;
+}
+
+.slick-slide {
+    display: none;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.slick-cloned {
+    display: none;
+    width: 0;
+    padding: 0;
+    margin: 0;
 }

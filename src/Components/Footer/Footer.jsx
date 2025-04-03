@@ -8,10 +8,12 @@ import { FaMapLocationDot } from "react-icons/fa6";
 import styles from "./Footer.module.css"
 
 import footerLogoImage from "../../../public/assets/logo-mlrental-removebg.png"
+import back3 from "../../../public/assets/base4.png"
 
 function Footer () {
     return (
         <footer className={styles.footer_main_container}>
+            <img src={back3} alt="" className={styles.back3} />
             <section className={styles.footer_nav_container}>
                 <section className={styles.footer_central_container}>
                     <article className={styles.footer_article}>

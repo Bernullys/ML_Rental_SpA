@@ -1,5 +1,8 @@
 .us_top_section_main_container {
-
+    background: url("../../../public/assets/empresa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 .us_top_section_image_container {
@@ -7,7 +10,6 @@
     height: auto;
     padding: 100px 0 0 0;
     background-position: center;
-    background-color: var(--color55);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +49,7 @@
 .us_paragraph {
     margin: 0px 0px 0px 0px;
     text-align: justify;
-    color: var(--color11);
+    color: var(--color00);
     font-family: "futuraLtBt";
     font-size: var(--textsize3);
     font-style: normal;
@@ -60,11 +62,8 @@
     width: auto;
     height: auto;
     background-position: center;
-    background-color: var(--color55);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 100px;
+    padding: 50px 0 100px 0;
 }
 
 .us_lower_section_characteristics_main_container svg {
@@ -72,6 +71,14 @@
     width: 100px;
     color:  var(--color77);
 }
+
+.card_values_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* 
 @media (max-width: 960px) {

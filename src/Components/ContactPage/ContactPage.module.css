@@ -4,7 +4,9 @@
     align-items: center;
     height:fit-content;
     flex-shrink: 0;
-    background-color: var(--color55);
+    background: url("../../../public/assets/equipos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contact_title {
@@ -23,7 +25,7 @@
     margin: 0px 0px 30px 0px;
     width: 50%;
     text-align: justify;
-    color: var(--color11);
+    color: var(--color00);
     font-family: "futuraLtBt";
     font-size: var(--textsize3);
     font-style: normal;
@@ -52,7 +54,7 @@
 }
 
 label {
-    color: var(--color11);
+    color: var(--color00);
     font-family: "futuraLtBt";
     font-size: var(--textsize3);
     font-style: normal;
@@ -84,23 +86,22 @@ input::after {
     width: 140px;
     height: 44px;
     padding: 5px;
-    border-radius: 16px;
+    border-radius: 25px;
     border: 0.888px solid  var(--color77);
-    color:  var(--color77);
+    color:  var(--color00);
     text-align: center;
     font-family: "futuraLtBt";
     font-size: var(--textsize1);
     font-style: normal;
     line-height: normal;
-    background: transparent;
+    background: var(--color77);
     cursor: pointer;
     margin: 24px 0px 0px 0px;
 }
 
 .button_contact:hover {
-    background-color: var(--color11);
-    color:  var(--color55);
-    border:  var(--color00) solid 1px;
+    background-color: transparent;
+    border:  var(--color77) solid 1px;
 }
 
 textarea {

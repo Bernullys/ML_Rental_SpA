@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    height: 50px;
     padding: 0 10px 0 20px;
     border-radius: 12px;
     cursor: pointer;
@@ -69,7 +69,7 @@
   }
   
   .collapse.show {
-    max-height: 500px; /* Adjust based on content */
+    max-height: 250px; /* Adjust based on content */
   }
 
   article header.active span {

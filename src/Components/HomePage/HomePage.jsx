@@ -9,17 +9,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import  imageSlider1 from "../../../public/assets/1.png"
-import  imageSlider2 from "../../../public/assets/2.png"
-import  imageSlider3 from "../../../public/assets/3.png"
-import  imageSlider4 from "../../../public/assets/4.png"
-import  imageSlider5 from "../../../public/assets/5.png"
-
 import logoSlider from "../../../public/assets/logo-mlrental-footer.png"
 import backg1 from "../../../public/assets/base6.png"
 import extrapay from "../../../public/assets/pago.jpg"
 import back2 from "../../../public/assets/base5.png"
-import back3 from "../../../public/assets/base7.png"
 
 
 
@@ -162,8 +155,7 @@ function HomePage () {
                                 </NavLink>
                             </section>
                         </section>
-                        <img src={back3} alt="background2"  className={styles.backg2}/>
-                        <section>
+                        <section className={styles.carousel_main_container}>
                             <section className={styles.carousel_title_container}>
                                 <h2  className={styles.carousel_title}>Nuestros Equipos</h2>
                                 <p className={styles.carousel_paragraph}>Explora nuestros equipos de medición eléctrica y encuentra la opción ideal para tus necesidades. Contamos con una selección de instrumentos precisos y confiables, disponibles para arriendo de forma rápida y sencilla.</p>

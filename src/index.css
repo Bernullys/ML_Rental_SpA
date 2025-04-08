@@ -48,7 +48,7 @@ body {
     font-size: 0;
     line-height: 0;
     position: absolute;
-    top: 87%; /*Modified by me*/
+    top: 81%; /*Modified by me*/
     display: block;
     width: 20px;
     height: 20px;
@@ -142,7 +142,7 @@ body {
 .slick-dots
 {
     position: absolute;
-    bottom: 80px; /*Modified by me*/
+    bottom: 120px; /*Modified by me*/
 
     display: block;
 

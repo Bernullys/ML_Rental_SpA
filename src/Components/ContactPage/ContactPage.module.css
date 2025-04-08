@@ -4,7 +4,7 @@
     align-items: center;
     height:fit-content;
     flex-shrink: 0;
-    background: url("../../../public/assets/equipos.png");
+    background: url("../../../public/assets/base2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

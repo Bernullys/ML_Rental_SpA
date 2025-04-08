@@ -55,6 +55,11 @@
     font-size: 16px;
 }
 
+.footer_navlink:hover {
+    color: var(--color1);
+    font-weight: 700;
+}
+
 .footer_central_container ul {
     list-style: none;
     margin: 0;
@@ -90,6 +95,13 @@
     font-family: "futuraLtBt";
     padding: 30px 0 0 0;
     margin: 0 0 0 2%;
+}
+
+.anchor_to_my_profile {
+    text-decoration: none;
+    color: var(--color00);
+    font-size: 14px;
+    margin-left: 4px;
 }
 
 

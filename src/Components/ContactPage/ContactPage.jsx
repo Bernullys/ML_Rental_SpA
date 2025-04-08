@@ -1,3 +1,4 @@
+import Footer from "../Footer/Footer"
 import emailjs from "emailjs-com"
 import styles from "./ContactPage.module.css"
 
@@ -62,6 +63,7 @@ function ContactPage () {
                         <br />
                     </section>
             </form>
+            <Footer />
         </section>
     )
 }

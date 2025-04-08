@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom"
 import Accordion from "../Accordion/Accordion"
 import styles from "./HomePage.module.css"
 import { Carousel1 } from "../Carousel1/Carousel1"
+import Footer from "../Footer/Footer"
 
 import Slider from "react-slick";
 
@@ -162,17 +163,19 @@ function HomePage () {
                             </section>
                             <Carousel1/>         
                         </section>
-                        <img src={back2} alt="background2"  className={styles.backg2}/>
-                        <section className={styles.howtorent_container}>
-                            <section className={styles.back2_title_container}>
-                                <h3 className={styles.howtorent_title}>¿Cómo arrendar nuestros equipos de pruebas eléctricas?</h3>
-                                <p className={styles.home_middle_paragraph}>Arrendar nuestros equipos es un proceso sencillo y rápido. Sigue los pasos a
-                                    continuación y obtén el equipo que necesitas de manera eficiente y segura.
-                                </p>
+                        <section className={styles.backg2_container}>
+                            <section className={styles.howtorent_container}>
+                                <section className={styles.back2_title_container}>
+                                    <h3 className={styles.howtorent_title}>¿Cómo arrendar nuestros equipos de pruebas eléctricas?</h3>
+                                    <p className={styles.home_middle_paragraph}>Arrendar nuestros equipos es un proceso sencillo y rápido. Sigue los pasos a
+                                        continuación y obtén el equipo que necesitas de manera eficiente y segura.
+                                    </p>
+                                </section>
+                                <section className={styles.back2_steps_container}>
+                                    <Accordion />
+                                </section>
                             </section>
-                            <section className={styles.back2_steps_container}>
-                                <Accordion />
-                            </section>
+                            <Footer />
                         </section>
                     </section>      
                 </section>

@@ -280,18 +280,16 @@
 
 /*------------------------------------*/
 
-.backg2 {
-    position: absolute;
-    margin: 0;
-    width: 100%;
-    height: 700px;
+.backg2_container {
+    background-image: url("../../../public/assets/base2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .howtorent_container {
     display: flex;
     justify-content: space-evenly;
-    height: 700px;
-    
 }
 
 .back2_container {

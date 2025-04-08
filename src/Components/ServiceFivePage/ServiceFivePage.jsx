@@ -1,4 +1,5 @@
-import CardTestGears from "../CardTestGears/CardTestGears";
+import CardTestGears from "../CardTestGears/CardTestGears"
+import Footer from "../Footer/Footer"
 
 import styles from "./ServiceFivePage.module.css"
 
@@ -229,7 +230,7 @@ function ServiceFivePage () {
                     ))
                 }
             </section>
-
+            <Footer />
         </section>
     )
 }

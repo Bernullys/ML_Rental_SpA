@@ -1,5 +1,6 @@
 import { TbEyeStar } from "react-icons/tb";
 import { LiaBullseyeSolid } from "react-icons/lia"
+import Footer from "../Footer/Footer"
 
 import CardUsValues from "../CardUsValues/CardUsValues"
 import styles from "./UsPage.module.css"
@@ -45,6 +46,7 @@ function Us () {
                             ))}
                 </section>
             </section>
+            <Footer />
         </section>
     )
 }

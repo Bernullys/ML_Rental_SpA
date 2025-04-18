@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { NavLink } from "react-router-dom"
 import Accordion from "../Accordion/Accordion"
 import styles from "./HomePage.module.css"
-import { Carousel1 } from "../Carousel1/Carousel1"
 import Footer from "../Footer/Footer"
 
 import Slider from "react-slick";
@@ -13,7 +12,6 @@ import "slick-carousel/slick/slick-theme.css";
 import logoSlider from "../../../public/assets/logo-mlrental-footer.png"
 import backg1 from "../../../public/assets/base6.png"
 import extrapay from "../../../public/assets/pago.jpg"
-import back2 from "../../../public/assets/base5.png"
 
 
 
@@ -66,7 +64,27 @@ function HomePage () {
         autoplaySpeed: 2000,
         cssEase: "linear",
         nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 850,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+        ]
         };
     return (
             <div className={styles.home_page_main_container}>
@@ -161,8 +179,8 @@ function HomePage () {
                             </section>
                             <section className={styles.home_middle_container}>
                                 <img className={styles.extrapayImage} src={extrapay} alt="extra-pay" />
-                                <h2 className={styles.home_middle_title}>No pagues días extra en tus arriendos</h2>
-                                <p className={styles.home_middle_paragraph}>Con nosotros puedes entregar los instrumentos los días sábado y domingo.</p>
+                                <h1 className={styles.home_title}>No pagues días extra en tus arriendos</h1>
+                                <p className={styles.home_top_paragraph}>Con nosotros puedes entregar los instrumentos los días sábado y domingo.</p>
                                 <NavLink to="/contacto">
                                     <button className={styles.white_button_buble}>Cotizar</button>
                                 </NavLink>
@@ -176,68 +194,68 @@ function HomePage () {
                                     <button className={styles.white_button_buble}>Equipos</button>
                                 </NavLink>
                             </section>
-                <Slider {...settingsSecond}>
-                    <div className={styles.second_card}>
-                        <div className={styles.second_slider_background1}></div>
-                        <div className={styles.second_card_body}>
-                            <h3 className={styles.second_card_body_h3}>Medidor de Resistencia de Devanados</h3>
-                        </div>
-                    </div>
-                    <div className={styles.second_card}>
-                        <div className={styles.second_slider_background2}></div>
-                        <div className={styles.second_card_body}>
-                            <h3 className={styles.second_card_body_h3}>Microohmítro 200 A</h3>
-                        </div>
-                    </div>
-                    <div className={styles.second_card}>
-                        <div className={styles.second_slider_background3}></div>
-                        <div className={styles.second_card_body}>
-                            <h3 className={styles.second_card_body_h3}>Pinza medición Puesta a Tierra</h3>
-                        </div>
-                    </div>
-                    <div className={styles.second_card}>
-                        <div className={styles.second_slider_background4}></div>
-                        <div className={styles.second_card_body}>
-                            <h3 className={styles.second_card_body_h3}>Medidor de Calidad de Baterías</h3>
-                        </div>
-                    </div>
-                    <div className={styles.second_card}>
-                        <div className={styles.second_slider_background5}></div>
-                        <div className={styles.second_card_body}>
-                            <h3 className={styles.second_card_body_h3}>Medidor de Relación de Transformación</h3>
-                        </div>
-                    </div>
-                    <div className={styles.second_card}>
-                        <div className={styles.second_slider_background6}></div>
-                        <div className={styles.second_card_body}>
-                            <h3 className={styles.second_card_body_h3}>Puentas para Pruebas VLF</h3>
-                        </div>
-                    </div>
-                    <div className={styles.second_card}>
-                        <div className={styles.second_slider_background7}></div>
-                        <div className={styles.second_card_body}>
-                            <h3 className={styles.second_card_body_h3}>Máquina Confección de Mufas</h3>
-                        </div>
-                    </div>
-                    <div className={styles.second_card}>
-                        <div className={styles.second_slider_background8}></div>
-                        <div className={styles.second_card_body}>
-                            <h3 className={styles.second_card_body_h3}>Medidor de Aislamiento 10 kV</h3>
-                        </div>
-                    </div>
-                    <div className={styles.second_card}>
-                        <div className={styles.second_slider_background9}></div>
-                        <div className={styles.second_card_body}>
-                            <h3 className={styles.second_card_body_h3}>Telurómetro</h3>
-                        </div>
-                    </div>
-                    <div className={styles.second_card}>
-                        <div className={styles.second_slider_background10}></div>
-                        <div className={styles.second_card_body}>
-                            <h3 className={styles.second_card_body_h3}>Microohmímetro 10 A</h3>
-                        </div>
-                    </div>
-                </Slider>       
+                            <Slider {...settingsSecond}>
+                                <div className={styles.second_card}>
+                                    <div className={styles.second_slider_background1}></div>
+                                    <div className={styles.second_card_body}>
+                                        <h3 className={styles.second_card_body_h3}>Medidor de Resistencia de Devanados</h3>
+                                    </div>
+                                </div>
+                                <div className={styles.second_card}>
+                                    <div className={styles.second_slider_background2}></div>
+                                    <div className={styles.second_card_body}>
+                                        <h3 className={styles.second_card_body_h3}>Microohmítro 200 A</h3>
+                                    </div>
+                                </div>
+                                <div className={styles.second_card}>
+                                    <div className={styles.second_slider_background3}></div>
+                                    <div className={styles.second_card_body}>
+                                        <h3 className={styles.second_card_body_h3}>Pinza medición Puesta a Tierra</h3>
+                                    </div>
+                                </div>
+                                <div className={styles.second_card}>
+                                    <div className={styles.second_slider_background4}></div>
+                                    <div className={styles.second_card_body}>
+                                        <h3 className={styles.second_card_body_h3}>Medidor de Calidad de Baterías</h3>
+                                    </div>
+                                </div>
+                                <div className={styles.second_card}>
+                                    <div className={styles.second_slider_background5}></div>
+                                    <div className={styles.second_card_body}>
+                                        <h3 className={styles.second_card_body_h3}>Medidor de Relación de Transformación</h3>
+                                    </div>
+                                </div>
+                                <div className={styles.second_card}>
+                                    <div className={styles.second_slider_background6}></div>
+                                    <div className={styles.second_card_body}>
+                                        <h3 className={styles.second_card_body_h3}>Puentas para Pruebas VLF</h3>
+                                    </div>
+                                </div>
+                                <div className={styles.second_card}>
+                                    <div className={styles.second_slider_background7}></div>
+                                    <div className={styles.second_card_body}>
+                                        <h3 className={styles.second_card_body_h3}>Máquina Confección de Mufas</h3>
+                                    </div>
+                                </div>
+                                <div className={styles.second_card}>
+                                    <div className={styles.second_slider_background8}></div>
+                                    <div className={styles.second_card_body}>
+                                        <h3 className={styles.second_card_body_h3}>Medidor de Aislamiento 10 kV</h3>
+                                    </div>
+                                </div>
+                                <div className={styles.second_card}>
+                                    <div className={styles.second_slider_background9}></div>
+                                    <div className={styles.second_card_body}>
+                                        <h3 className={styles.second_card_body_h3}>Telurómetro</h3>
+                                    </div>
+                                </div>
+                                <div className={styles.second_card}>
+                                    <div className={styles.second_slider_background10}></div>
+                                    <div className={styles.second_card_body}>
+                                        <h3 className={styles.second_card_body_h3}>Microohmímetro 10 A</h3>
+                                    </div>
+                                </div>
+                            </Slider>       
                         </section>
                         <section className={styles.backg2_container}>
                             <section className={styles.howtorent_container}>

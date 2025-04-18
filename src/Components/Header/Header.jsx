@@ -4,6 +4,7 @@ import { IoBriefcaseSharp } from "react-icons/io5";
 import { IoMailSharp } from "react-icons/io5";
 import { SiSpeedtest } from "react-icons/si";
 import { IoIosContact } from "react-icons/io";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 
 import styles from "./Header.module.css"
@@ -16,15 +17,22 @@ function Header () {
         setExpandedMenu(!expandedMenu)
     }
 
+
     return (
         <header className={styles.header_header}>
+            <nav className={styles.burger_menu_container}>
+                <NavLink className={styles.navlink_menu} onClick={toggleMenu}>
+                    <GiHamburgerMenu className={styles.burger_menu}/>
+                    ML Rental
+                </NavLink>
+            </nav>
             <nav className={styles.header_nav_container}>
                 <ul className={styles.header_nav_ul}>
                     <li>
                         <NavLink
                             to="/"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}>
-                                <IoIosContact  className={styles.header_icons}/>
+                                <IoIosContact className={ (isActive) => isActive ? styles.header_icons_selected : undefined}/>
                                 Inicio         
                         </NavLink>
                     </li>
@@ -32,7 +40,7 @@ function Header () {
                         <NavLink
                             to="/empresa"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}>
-                                <IoBriefcaseSharp className={styles.header_icons}/> 
+                                <IoBriefcaseSharp  className={ (isActive) => isActive ? styles.header_icons_selected : undefined}/> 
                                 Empresa
                         </NavLink>
                     </li>
@@ -41,7 +49,7 @@ function Header () {
                             to="/equipos-en-arriendo"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}
                             >
-                                <SiSpeedtest  className={styles.header_icons} />
+                                <SiSpeedtest  className={ (isActive) => isActive ? styles.header_icons_selected : undefined}/>
                                 Instrumentos y Accesorios
                         </NavLink>
                     </li>
@@ -49,7 +57,7 @@ function Header () {
                         <NavLink
                             to="/contacto"
                             className={({ isActive }) => isActive ? styles.active_page : undefined}>
-                                <IoMailSharp  className={styles.header_icons}/>
+                                <IoMailSharp  className={ (isActive) => isActive ? styles.header_icons_selected : undefined}/>
                                 Contacto
                         </NavLink>
                     </li>
@@ -65,31 +73,24 @@ function Header () {
                         </NavLink>
                     </li>
                     <li className={styles.responsive_menu_list_item}>
-                        <NavLink to="/nosotros"
+                        <NavLink to="/empresa"
                             className={styles.responsive_menu_list_item_anchor}
                             onClick={toggleMenu}>
-                                Nosotros
+                                Empresa
                         </NavLink>
                     </li>
                     <li className={styles.responsive_menu_list_item}>
-                        <NavLink to="/servicios"
+                        <NavLink to="/equipos-en-arriendo"
                             className={styles.responsive_menu_list_item_anchor}
                             onClick={toggleMenu}>
-                                Servicios
-                        </NavLink>
-                    </li>
-                    <li className={styles.responsive_menu_list_item}>
-                        <NavLink to="/proyectos"
-                            className={styles.responsive_menu_list_item_anchor}
-                            onClick={toggleMenu}>
-                                Proyectos
+                                Instrumentos y Accesorios
                         </NavLink>
                     </li>
                     <li className={styles.responsive_menu_list_item}>
                         <NavLink to="/contacto"
                             className={styles.responsive_menu_list_item_anchor}
                             onClick={toggleMenu}>
-                                Contáctanos
+                                Contacto
                         </NavLink>
                     </li>
                 </ul>

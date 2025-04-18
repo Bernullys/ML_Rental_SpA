@@ -48,7 +48,7 @@ body {
     font-size: 0;
     line-height: 0;
     position: absolute;
-    top: 81%; /*Modified by me*/
+    top: 50%; /*Modified by me*/
     display: block;
     width: 20px;
     height: 20px;
@@ -77,12 +77,12 @@ body {
 .slick-next:hover:before,
 .slick-next:focus:before
 {
-    opacity: 1;
+    opacity: 0.3;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
 {
-    opacity: .5;
+    opacity: .9;
 }
 
 .slick-prev:before,
@@ -92,14 +92,14 @@ body {
     font-size: 36px; /*Modified by me*/
     line-height: 0.75; /*Modified by me*/
     opacity: 1;
-    color: var(--color00);
+    color: var(--color77);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev
 {
-    left: 45%; /*Modified by me*/
+    left: 2%; /*Modified by me*/
 }
 [dir='rtl'] .slick-prev
 {
@@ -117,7 +117,7 @@ body {
 
 .slick-next
 {
-    right: 45%; /*Modified by me*/
+    right: 3%; /*Modified by me*/
 }
 [dir='rtl'] .slick-next
 {
@@ -160,7 +160,7 @@ body {
 
     display: inline-block;
 
-    width: 0.5%; /*Modified by me*/
+    width: 1%; /*Modified by me*/
     height: 20px;
     margin: 0 5px;
     padding: 0;
@@ -193,12 +193,12 @@ body {
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
 {
-    opacity: 1;
+    opacity: 0.5;
 }
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 7px; /*Modified by me*/
+    font-size: 10px; /*Modified by me*/
     line-height: 20px;
 
     position: absolute;
@@ -248,4 +248,11 @@ body {
     width: 0;
     padding: 0;
     margin: 0;
+}
+
+@media (max-width: 600px) {
+    .slick-next:before,
+    .slick-prev:before  {
+        display: none;
+    }
 }

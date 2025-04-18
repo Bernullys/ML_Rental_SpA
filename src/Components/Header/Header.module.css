@@ -18,18 +18,6 @@
 
 }
 
-/* .a_logo {
-    margin-left: 10px;
-} */
-
-/* .header_logo_container {
-    height: 75px;
-    width: 250px;
-    background: url("../../../public/assets/logo-mlrental-footer.png");
-    background-size: cover;
-    background-color: var(--color55);
-} */
-
 .header_nav_ul {
     width: auto;
     height: 100%;
@@ -80,52 +68,116 @@
     color: var(--color00);
 }
 
-
+.header_icons_selected,
 .header_nav_ul li .active_page {
     color: var(--color77);
 }
 
-/* This is for the menu when width < 960px */
 
+/* This is for the menu when width < 830px */
 
 .responsive_menu_list {
-    width: 100%;
-    height: 100%;
-    background-color:  var(--color4);
+    width: auto;
+    height: auto;
+    background-image: url("../../../public/assets/4.png");
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     list-style: none;
     padding: 0px;
     margin: 0;
-    position: fixed;
-    top: 100px;
+
+    top: 60px;
+    z-index: 0;
 }
 
 .responsive_menu_list_item {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     background-color:  var(--color4);
-    width: 100%;
+    width: auto;
     padding: 12px 0 12px 8px;
-    /* border: solid 1px #FFF; */
+    margin: 0 0 0 0px;
 }
 
 .responsive_menu_list_item_anchor {
     text-decoration: none;
-    color: #FFF;
+    color: var(--color00);
     font-family: "futuraLtBt";
-    font-size: 20px;
+    font-size: var(--textsize3);
     font-style: normal;
     font-weight: 550;
     line-height: normal;
+    text-align: center;
+}
+
+.responsive_menu_list_item_anchor:hover {
+    color: var(--color77);
 }
 
 .menu_hided {
     display: none;
 }
 
+/*Burger menu */
+.burger_menu_container {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.navlink_menu {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--subttitle1);
+    font-weight: 700;
+    color: var(--color00);
+}
+
+.burger_menu {
+    height: 40px;
+    width: 40px;
+    color: var(--color00);
+    margin: 10px;
+}
+
+/*----------------------------------------*/
+
+
+@media(max-width: 830px) {
+    .header_nav_container {
+        display: none;
+    }
+    .burger_menu_container {
+        display: block;
+    }
+    .card_body_par {
+        display: none;
+    }
+}
+
+@media(max-width: 300px) {
+    .navlink_menu {
+        font-size: var(--textsize2);
+        
+    }
+    .burger_menu {
+        height: 20px;
+        margin: 12px;
+    }
+}
+
+
+
+
+@media(min-width: 830px) {
+    .responsive_menu_list {
+        display: none;
+    }
+}
 /* 
 @media(max-width: 1200px) {
     #cotiza_header_button {

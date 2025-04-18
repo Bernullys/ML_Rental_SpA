@@ -5,14 +5,14 @@ import styles from "./ServiceFivePage.module.css"
 
 import imageFiveService1 from "../../../public/assets/RMO200G.png"
 import imageFiveService2 from "../../../public/assets/AEMC3731.png"
-import imageFiveService3 from "../../../public/assets/IBEX2000.png"
+import imageFiveService3 from "../../../public/assets/IBEX2000-2.png"
 import imageFiveService4 from "../../../public/assets/AEMCDTR8510.png"
 import imageFiveService5 from "../../../public/assets/PUNTASVLF.png"
 import imageFiveService6 from "../../../public/assets/ALROCMF360.png"
-import imageFiveService7 from "../../../public/assets/MEGGERS1-1068.png"
+import imageFiveService7 from "../../../public/assets/MEGGERS1-1068-2.png"
 import imageFiveService8 from "../../../public/assets/AEMC6472.png"
 import imageFiveService9 from "../../../public/assets/AEMC6250.png"
-import imageFiveServiceWR14 from "../../../public/assets/WR14.png"
+import imageFiveServiceWR14 from "../../../public/assets/WR14-2.png"
 
 
 import pdfFiveService1 from "../../../public/assets/RMO-200G.pdf"

@@ -48,14 +48,26 @@ function HomePage () {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     speed: 1000,
     autoplaySpeed: 4000,
     cssEase: "linear",
     nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    prevArrow: <SamplePrevArrow />,
     };
 
+    const settingsSecond = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 500,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
+        };
     return (
             <div className={styles.home_page_main_container}>
                 <Slider {...settings}>
@@ -80,7 +92,7 @@ function HomePage () {
                                 <img className={styles.mlrentalLogo} src={logoSlider} alt="MLRental-logo" />
                             </div>
                             <p className={styles.card_mlrental}>ML Rental</p>
-                            <h3 className={styles.card_body_h3}>Arrendamiento Fácil y Rápido</h3>
+                            <h3 className={styles.card_body_h3}>Arriendo Fácil y Rápido</h3>
                             <p className={styles.card_body_par}>Simplificamos el proceso de arriendo
                             para que obtengas el equipo que necesitas sin demoras ni complicaciones.</p>
                             <NavLink to="/contacto">
@@ -160,8 +172,72 @@ function HomePage () {
                             <section className={styles.carousel_title_container}>
                                 <h2  className={styles.carousel_title}>Nuestros Equipos</h2>
                                 <p className={styles.carousel_paragraph}>Explora nuestros equipos de medición eléctrica y encuentra la opción ideal para tus necesidades. Contamos con una selección de instrumentos precisos y confiables, disponibles para arriendo de forma rápida y sencilla.</p>
+                                <NavLink to="/equipos-en-arriendo">
+                                    <button className={styles.white_button_buble}>Equipos</button>
+                                </NavLink>
                             </section>
-                            <Carousel1/>         
+                <Slider {...settingsSecond}>
+                    <div className={styles.second_card}>
+                        <div className={styles.second_slider_background1}></div>
+                        <div className={styles.second_card_body}>
+                            <h3 className={styles.second_card_body_h3}>Medidor de Resistencia de Devanados</h3>
+                        </div>
+                    </div>
+                    <div className={styles.second_card}>
+                        <div className={styles.second_slider_background2}></div>
+                        <div className={styles.second_card_body}>
+                            <h3 className={styles.second_card_body_h3}>Microohmítro 200 A</h3>
+                        </div>
+                    </div>
+                    <div className={styles.second_card}>
+                        <div className={styles.second_slider_background3}></div>
+                        <div className={styles.second_card_body}>
+                            <h3 className={styles.second_card_body_h3}>Pinza medición Puesta a Tierra</h3>
+                        </div>
+                    </div>
+                    <div className={styles.second_card}>
+                        <div className={styles.second_slider_background4}></div>
+                        <div className={styles.second_card_body}>
+                            <h3 className={styles.second_card_body_h3}>Medidor de Calidad de Baterías</h3>
+                        </div>
+                    </div>
+                    <div className={styles.second_card}>
+                        <div className={styles.second_slider_background5}></div>
+                        <div className={styles.second_card_body}>
+                            <h3 className={styles.second_card_body_h3}>Medidor de Relación de Transformación</h3>
+                        </div>
+                    </div>
+                    <div className={styles.second_card}>
+                        <div className={styles.second_slider_background6}></div>
+                        <div className={styles.second_card_body}>
+                            <h3 className={styles.second_card_body_h3}>Puentas para Pruebas VLF</h3>
+                        </div>
+                    </div>
+                    <div className={styles.second_card}>
+                        <div className={styles.second_slider_background7}></div>
+                        <div className={styles.second_card_body}>
+                            <h3 className={styles.second_card_body_h3}>Máquina Confección de Mufas</h3>
+                        </div>
+                    </div>
+                    <div className={styles.second_card}>
+                        <div className={styles.second_slider_background8}></div>
+                        <div className={styles.second_card_body}>
+                            <h3 className={styles.second_card_body_h3}>Medidor de Aislamiento 10 kV</h3>
+                        </div>
+                    </div>
+                    <div className={styles.second_card}>
+                        <div className={styles.second_slider_background9}></div>
+                        <div className={styles.second_card_body}>
+                            <h3 className={styles.second_card_body_h3}>Telurómetro</h3>
+                        </div>
+                    </div>
+                    <div className={styles.second_card}>
+                        <div className={styles.second_slider_background10}></div>
+                        <div className={styles.second_card_body}>
+                            <h3 className={styles.second_card_body_h3}>Microohmímetro 10 A</h3>
+                        </div>
+                    </div>
+                </Slider>       
                         </section>
                         <section className={styles.backg2_container}>
                             <section className={styles.howtorent_container}>

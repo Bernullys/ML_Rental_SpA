@@ -41,7 +41,9 @@
 
 }
 
-.footer_article {
+.footer_article_one,
+.footer_article_two,
+.footer_article_three {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -93,7 +95,7 @@
     color: #FFF;
     font-size: 14px;
     font-family: "futuraLtBt";
-    padding: 30px 0 0 0;
+    padding: 16px 0 0 0;
     margin: 0 0 0 2%;
 }
 
@@ -105,46 +107,28 @@
 }
 
 
-/* @media(max-width: 1500px) {
-    .footer_logo_container {
-        margin-right: 0;
-    }
-    .footer_nav_container {
-        justify-content: center;
-    }
-}
-
-@media(max-width: 1255px) {
-    .botton_rights {
-        width: auto;
-        display: flex;
-    }
-    .botton_rights ul {
-        margin-right: 24px;
-    }
-
-}
-
-@media(max-width: 830px) {
-    .botton_rights {
+@media (max-width: 600px) {
+    .footer_article_one {
         display: none;
     }
-    .footer_central_container {
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-top: 10px;
-        width: auto;
-    }
-    .footer_nav_container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 500px;
-    }
-}
-
-@media(max-width: 500px) {
     .logo_hvt_footer {
+        height: 120px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 410px) {
+    .botton_rights,
+    .footer_article_three {
         display: none;
     }
-} */
+}
+
+@media (max-width: 350px) {
+    .footer_article_one {
+        display: none;
+    }
+    .logo_hvt_footer {
+        height: 80px;
+    }
+}

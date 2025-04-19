@@ -417,6 +417,8 @@
     justify-content: space-evenly;
 }
 
+
+
 .back2_container {
     display: flex;
     justify-content: space-around;
@@ -445,12 +447,37 @@
     line-height: normal; 
 }
 
-
-
 .back2_steps_container {
     position: relative;
 }
 
+@media (max-width: 855px) {
+    .howtorent_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .back2_title_container  {
+        margin: 0;
+        height: auto;
+    }
+    .back2_steps_container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 830px) {
+    .howtorent_title {
+        font-size: var(--subttitle1);
+    }
+}
+
+@media (max-width: 540px) {
+    .home_middle_paragraph {
+        display: none;
+    }
+}
 
 /* ---------------------- home carousel ------------------------------------------------ */
 

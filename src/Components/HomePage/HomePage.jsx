@@ -46,7 +46,7 @@ function HomePage () {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     speed: 1000,
     autoplaySpeed: 4000,
     cssEase: "linear",
@@ -260,7 +260,7 @@ function HomePage () {
                         <section className={styles.backg2_container}>
                             <section className={styles.howtorent_container}>
                                 <section className={styles.back2_title_container}>
-                                    <h3 className={styles.howtorent_title}>¿Cómo arrendar nuestros equipos de pruebas eléctricas?</h3>
+                                    <h3 className={styles.howtorent_title}>¿Cómo arrendar nuestros equipos de pruebas eléctricos?</h3>
                                     <p className={styles.home_middle_paragraph}>Arrendar nuestros equipos es un proceso sencillo y rápido. Sigue los pasos a
                                         continuación y obtén el equipo que necesitas de manera eficiente y segura.
                                     </p>

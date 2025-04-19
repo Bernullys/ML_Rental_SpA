@@ -27,7 +27,7 @@
 .servicefive_paragraph {
     display: block;
     margin: 40px 0 40px 0;
-    width: 50%;
+    width: 70%;
     justify-content: center;
     color: var(--color00);
     text-align: justify;
@@ -40,18 +40,13 @@
 
 .servicefive_cards_main_container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 60%;
+    width: 100%;
 }
 
-/* @media (max-width: 470px) {
+@media (max-width: 470px) {
     .servicefive_title {
-        font-size: 44px;
+        font-size: var(--subttitle1);
     }
 }
-
-@media (max-width: 235px) {
-    .servicefive_title {
-        font-size: 32px;
-    }
-} */

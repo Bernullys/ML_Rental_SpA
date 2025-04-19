@@ -55,7 +55,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 40%;
+    width: 60%;
 }
 
 .us_lower_section_characteristics_main_container {
@@ -80,82 +80,23 @@
 }
 
 
-/* 
-@media (max-width: 960px) {
-    .us_middle_section_cards_container {
-        width: 90%;
-    }
-}
-
-@media (max-width: 750px) {
-    .us_lower_section_characteristics_main_container svg  {
-        height: 120px;
-        width: 120px;
-    }
-    .us_lower_section_main_container {
-        height: 600px;
-    }
-    .us_top_title {
-        margin: 100px 0 0 100px;
-    }
-}
-
-@media (max-width: 690px) {
-    .us_middle_section_cards_container {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-}
-
-@media (max-width: 500px) {
-    .us_top_section_image_container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (max-width: 510px) {
-    .us_lower_section_characteristics_main_container {
-        margin-top: 30px;
-    }
-}
-
-@media (max-width: 400px) {
-    .us_top_title {
-        margin: 24px 0 0 16px;
-    }
-    .us_lower_section_characteristics_main_container svg {
-        height: 80px;
-        width: 80px;
-        color: #18CAFF;
-    }
-}
-
-@media (max-width: 310px) {
-    .us_lower_section_characteristics_main_container svg {
-        display: none;
-    }
-    .us_top_title {
-        font-size: 36px;
-    }
-    .us_subtitle {
-        font-size: 20px
-    }
+@media (max-width: 900px) {
     .us_paragraph {
-        font-size: 16px
+        width: 80%;
+    }
+    .card_values_container {
+        flex-direction: column;
     }
 }
 
-@media (max-width: 310px) {
-    .us_top_title {
-        font-size: 24px;
+
+@media (max-width: 480px) { 
+    .mlrentalLogo {
+        width: 80%;
+        height: 80%;
+    }
+    .us_lower_section_characteristics_main_container svg {
+        height: 70px;
+        width: 70px;
     }
 }
-
-@media (max-width: 270px) {
-    .us_lower_section_main_container {
-        height: 950px;
-    }
-} */

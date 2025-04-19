@@ -4,7 +4,7 @@ function CardUsValues ({ valueIcon, value, description }) {
     return (
         <article className={styles.card_us_values_main_container}>
             <section className={styles.card_us_values_container}>
-                <div>
+                <div className={styles.card_us_icon_container}>
                     {valueIcon}
                 </div>
                 <h2 className={styles.card_us_value}>{value}</h2>

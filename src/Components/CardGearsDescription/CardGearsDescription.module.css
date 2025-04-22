@@ -1,7 +1,9 @@
 .card_gear_des_main_container {
     width: 70vw;
     height: 70vh;
-    background: var(--color77);
+    background-image: url("../../../public/assets/base6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
 
@@ -12,72 +14,67 @@
     font-size: var(--title1);
     font-style: normal;
     font-weight: 400;
-    line-height: 50px;
-    margin: 100px 0 0 0;
+    line-height: 100%;
+    margin: 50px 0 40px 0;
 }
 
 .card_gear_des_paragraph {
     display: block;
-    margin: 40px 200px 40px 200px;
+    margin: 10px 20px 10px 20px;
     color: var(--color00);
     text-align: justify;
     font-family: "futuraLtBt";
     font-size: var(--textsize3);
     font-style: normal;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 120%;
 }
-/* 
+
+@media (max-width: 820px) {
+    .card_gear_des_main_container {
+        width: 90vw;
+        height: 90vh;
+    }
+}
+
 @media (max-width: 710px) {
     .card_gear_des_paragraph {
-        font-size: 18px;
+        font-size: var(--textsize3);
     }
     .card_gear_des_title {
-        font-size: 44px;
+        font-size: var(--subttitle1);
     }
 }
 
 @media (max-width: 590px) {
-    .card_gear_des_paragraph {
-        font-size: 16px;
+    /* .card_gear_des_paragraph {
         margin: 0px 40px 0px 40px;
-    }
+    } */
     .card_gear_des_title {
-        font-size: 32px;
-    }
-}
-
-@media (max-width: 475px) {
-    .card_gear_des_paragraph {
-        font-size: 15px;
-        margin: 0px 20px 0px 20px;
-        line-height: 130%;
-    }
-    .card_gear_des_title {
-        font-size: 28px;
-        line-height: 100%;
-        margin: 100px 0 20px 0;
+        font-size: var(--textsize3);
     }
 }
 
 @media (max-width: 425px) {
-    .card_gear_des_title {
-        font-size: 24px;
-        margin: 115px 0 20px 0;
+    .card_gear_des_main_container {
+        width: 100vw;
+        height: 100vh;
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 330px) {
+    .card_gear_des_main_container {
+        width: 100vw;
+        height: 100vh;
+    }
     .card_gear_des_paragraph {
-        font-size: 15px;
-        margin: 0px 10px 0px 10px;
-        line-height: 110%;
+        font-size: var(--textsize1);
+
     }
 }
 
 @media (max-width: 255px) {
     .card_gear_des_title {
-        font-size: 20px;
-        margin: 115px 0 20px 0;
+
     }
-} */
+}

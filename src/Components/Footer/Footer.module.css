@@ -108,19 +108,17 @@
 
 
 @media (max-width: 600px) {
+    .botton_rights,
     .footer_article_one {
         display: none;
     }
     .logo_hvt_footer {
-        height: 120px;
+        height: 110px;
         margin-left: 0px;
     }
-}
-
-@media (max-width: 410px) {
-    .botton_rights,
-    .footer_article_three {
-        display: none;
+    .footer_central_container {
+        flex-direction: column;
+        align-items: center;
     }
 }
 

@@ -75,7 +75,7 @@ const testGears = [
         eett: pdfFiveService2
     },
     {
-        name: "Equipo de medición para calidad de baterías",
+        name: "Equipo de medición para calidad en baterías",
         brand: "Powertron",
         model: "Ibex 2000",
         image: imageFiveService3,

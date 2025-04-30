@@ -204,7 +204,7 @@ function HomePage () {
                                 <div className={styles.second_card}>
                                     <div className={styles.second_slider_background2}></div>
                                     <div className={styles.second_card_body}>
-                                        <h3 className={styles.second_card_body_h3}>Microohmítro 200 A</h3>
+                                        <h3 className={styles.second_card_body_h3}>Microohmímetro 200 A</h3>
                                     </div>
                                 </div>
                                 <div className={styles.second_card}>
@@ -228,7 +228,7 @@ function HomePage () {
                                 <div className={styles.second_card}>
                                     <div className={styles.second_slider_background6}></div>
                                     <div className={styles.second_card_body}>
-                                        <h3 className={styles.second_card_body_h3}>Puentas para Pruebas VLF</h3>
+                                        <h3 className={styles.second_card_body_h3}>Puntas para Pruebas VLF</h3>
                                     </div>
                                 </div>
                                 <div className={styles.second_card}>

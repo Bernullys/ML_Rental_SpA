@@ -47,9 +47,6 @@
 }
 
 @media (max-width: 590px) {
-    /* .card_gear_des_paragraph {
-        margin: 0px 40px 0px 40px;
-    } */
     .card_gear_des_title {
         font-size: var(--textsize3);
     }
